@@ -101,7 +101,7 @@ Now OpenCola is ready to use, and you will see your (empty if this is the first 
 
 # Setting up Your User
 
-You can set a display name and image for yourself in peer settings by clicking on person Icon with a plus:
+You can set a display name and image for yourself in peer settings by clicking the <img src="img/peers.png" width="15" /> icon:
 
 <img src="img/setInfo.png" width="800" />
 
@@ -109,12 +109,13 @@ Fields:
 
 | Field | Description |
 | --- | --- |
-| Name | Name visible to peers |
-| Id | Gobally unique OpenCola user id |
-| Public Key | Cryptogrpahic public key used to encrypt and sign data |
-| Address | The address at which peers can request data from you |
-| Image Url | Url of image for user |
-| Active | Whether or not the users is actively being sychronized with |
+| <img src="img/peers.png" width="15" /> | Name visible to peers when you connect (more later) |
+| <img src="img/id.png" width="15" /> | Your gobally unique OpenCola user id - not changeable |
+| <img src="img/key.png" width="15" /> | A cryptogrpahic public key used to encrypt and sign data - not changeable yet |
+| <img src="img/link.png" width="15" /> | The address at which peers can request data from you. Default is to use the OpencCola relay server (more later) |
+| <img src="img/photo.png" width="15" /> | Url of image for your picture. This has to be a web link right now. |
+| <img src="img/refresh.png" width="15" /> | Whether or not the user is actively being sychronized with (more later) |
+
 
 
 
