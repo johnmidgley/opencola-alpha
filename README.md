@@ -105,6 +105,16 @@ You can set a display name and image for yourself in peer settings by clicking o
 
 <img src="img/setInfo.png" width="800" />
 
+Fields:
+
+| Field | Description |
+| --- | --- |
+| Name | Name visible to peers |
+| Id | Gobally unique OpenCola user id |
+| Public Key | Cryptogrpahic public key used to encrypt and sign data |
+| Address | The address at which peers can request data from you |
+| Image Url | Url of image for user |
+| Active | Whether or not the users is actively being sychronized with |
 
 
 
