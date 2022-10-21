@@ -22,7 +22,12 @@ OpenCola currently runs inside a docker container, which provides a few advantag
 </p>
 </details>
 
-## Install
+In order to make sure that OpenCola runs at startup / login, set docker to start when you log in:
+
+<img src="img/dockerSettings.png" width="800" />
+
+
+## Install OpenCola
 
 1. Download the [archive](dist/opencola-alpha.zip)
 2. Unarchive it wherever you like (we'll call this location $OPENCOLA)
