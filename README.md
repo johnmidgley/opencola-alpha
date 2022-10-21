@@ -32,6 +32,24 @@ In order to make sure that OpenCola runs at startup / login, set docker to start
 1. Download the [archive](dist/opencola-alpha.zip)
 2. Unarchive it wherever you like (we'll call this location $OPENCOLA)
 
+### Install the Browser Extension
+
+OpenCola comes with a browser extension. It currenlty only works with Chrome based browsers (e.g. Chrome, Chromium, Brave, Edge). We will provide other extnsions in the future. To install the extension, go to your browsers extensions page. In Brave, navigate to brave://extensions, which looks like:
+
+<img src="img/manageExtensions.png" width="800" />
+
+In the future, we will provide the extension in the Web Store, but for now you must install it manually. To do so, click the "Developer mode" slider: 
+
+<img src="img/enableDeveloperMode.png" width="800" />
+
+Then click "Load Unpacked" and select the folder $OPENCOLA/chrome. 
+
+<img src="img/openColaExtensionEnabled.png" width="800" />
+
+Lastly, pin the extension to your toolbar (so it's always visible) by clicking the extension icon (the puzzle piece) and click the pin beside OpenCola:
+
+<img src="img/pinExtension.png" width="800" />
+
 # Starting OpenCola
 
 Open a terminal and navigate to $OPENCOLA. 
@@ -77,7 +95,9 @@ Lastly, you will need to authenticate your browser:
 
 <img src="img/browserAuthenticate.png" width="800" />
 
-Now OpenCola is ready for use.
+Now OpenCola is ready to use, and you will see your (empty) feed:
+
+<img src="img/emptyFeed.png" width="800" />
 
 
 
