@@ -64,13 +64,15 @@ The application is started and you can navigate to https://localhost:5796. (You 
 
 <img src="img/setPassword.png" width="800" />
 
-Enter a password and confim it. You will then be prompted to enter a username and your password to continue. The user name can be anything you like, and is used for web authentication (more in the next step):
+Enter a password and confim it. You will then be prompted to enter a username and your password to continue. The user name can be anything you like, but so you don't forget it, you must set it in the config file (storage/opencola-server.yaml) and is used for web authentication. Once your password is set, you'll be prompted to login to the app. Using the default username 'oc' the page looks like:
 
 <img src="img/startApp.png" width="800" />
 
 Lastly, you will need to authenticate your browser:
 
 <img src="img/browserAuthenticate.png" width="800" />
+
+Now OpenCola is ready for use.
 
 
 
