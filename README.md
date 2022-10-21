@@ -60,4 +60,17 @@ Server started - visit http://localhost:5795
                    or https://localhost:5796 (Secure - recommended)
 ```
 
-The application is started and you can navigate to https://localhost:5796. You can use plain http link too, but it is not secure.
+The application is started and you can navigate to https://localhost:5796. (You can use plain http link too, but it is not secure). When you navigate to the page, you'll be prompted to set a password:
+
+<img src="img/setPassword.png" width="800" />
+
+Enter a password and confim it. You will then be prompted to enter a username and your password to continue. The user name can be anything you like, and is used for web authentication (more in the next step):
+
+<img src="img/startApp.png" width="800" />
+
+Lastly, you will need to authenticate your browser:
+
+<img src="img/browserAuthenticate.png" width="800" />
+
+
+
