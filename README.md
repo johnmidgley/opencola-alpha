@@ -95,9 +95,18 @@ Lastly, you will need to authenticate your browser:
 
 <img src="img/browserAuthenticate.png" width="800" />
 
-Now OpenCola is ready to use, and you will see your (empty) feed:
+Now OpenCola is ready to use, and you will see your (empty if this is the first time running) feed:
 
 <img src="img/emptyFeed.png" width="800" />
+
+# Setting up Your User
+
+You can set a display name and image for yourself in peer settings by clicking on person Icon with a plus:
+
+<img src="img/setInfo.png" width="800" />
+
+
+
 
 
 
