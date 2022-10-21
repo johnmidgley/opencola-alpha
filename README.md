@@ -20,5 +20,37 @@ OpenCola currently runs inside a docker container, which provides a few advantag
 </p>
 </details>
 
+## Install
 
+1. Download the [archive](dist/opencola-alpha.zip)
+2. Unarchive it wherever you like (we'll call this location $OPENCOLA)
 
+# Starting OpenCola
+
+Open a terminal and navigate to $OPENCOLA. 
+
+```
+cd unix
+./start
+```
+
+You should see output similar to:
+
+```
+Creating storage
+No SSL certificate found
+[+] Running 2/2
+ ⠿ Network opencola_default   Created 0.0s
+ ⠿ Container opencola-server  Started 0.3ss
+Docker container started
+Waiting for certificate creation
+New certs have been created. Install (y/n)?
+y
+~/.opencola/storage/cert ~/dev/opencola/install/unix
+Password:
+~/dev/opencola/install/unix
+Server started - visit http://localhost:5795
+                   or https://localhost:5796 (Secure - recommended)
+```
+
+The application is started and you can navigate to https://localhost:5796. You can use plain http link too, but it is not secure.
