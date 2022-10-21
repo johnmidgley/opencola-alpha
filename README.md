@@ -1,3 +1,5 @@
+<img src="img/pull-tab.svg" width="200" />
+
 # opencola-alpha
 
 Welcome to the OpenCola alpha.
@@ -45,6 +47,11 @@ No SSL certificate found
 Docker container started
 Waiting for certificate creation
 New certs have been created. Install (y/n)?
+```
+
+At this point, a TLS certificate has been generated so that you can use OpenCola over https. Enter 'y' to install the certificate. This requires sudo access, so you will have to enter your system password on the command line, and once again in a UI dialog for the key tool.
+
+```
 y
 ~/.opencola/storage/cert ~/dev/opencola/install/unix
 Password:
