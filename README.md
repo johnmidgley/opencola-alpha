@@ -128,9 +128,10 @@ The various icons mean:
 
 | Icon | Description |
 | --- | --- |
-| <img src="img/save.png" width="15" /> | Save the current page |
-| <img src="img/like.png" width="15" /> | Like the current page |
-| <img src="img/trust.png" width="15" /> | Trust the current page | 
+| <img src="img/save.png" width="15" /> | Save the current page (Add to feed, store archive, and index for search) |
+| <img src="img/like.png" width="15" /> | Like the current page (saves page implicitly |
+| <img src="img/trust.png" width="15" /> | Trust the current page (saves page implicitly) | 
+| <img src="img/search.png" width="15" /> | Go to search / feed page | 
 
 
 
