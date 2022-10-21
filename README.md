@@ -54,7 +54,7 @@ Waiting for certificate creation
 New certs have been created. Install (y/n)?
 ```
 
-At this point, a TLS certificate has been generated so that you can use OpenCola over https. Enter 'y' to install the certificate. This requires sudo access, so you will have to enter your system password on the command line, and once again in a UI dialog for the key tool.
+If this is the first time you're starting OpenCola, a TLS certificate will have been generated so that you can use OpenCola over https. Enter 'y' to install the certificate. This requires sudo access, so you will have to enter your system password on the command line, and once again in a UI dialog for the key tool.
 
 ```
 y
@@ -65,7 +65,7 @@ Server started - visit http://localhost:5795
                    or https://localhost:5796 (Secure - recommended)
 ```
 
-The application is started and you can navigate to https://localhost:5796. (You can use plain http link too, but it is not secure). When you navigate to the page, you'll be prompted to set a password:
+You can now navigate to https://localhost:5796. (You can use plain http link too, but it is not secure). The first time you start OpenCola, you'll be prompted to set a password:
 
 <img src="img/setPassword.png" width="800" />
 
