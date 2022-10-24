@@ -2,7 +2,13 @@
 
 # opencola-alpha
 
-Welcome to the OpenCola alpha.
+Welcome to the OpenCola alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. 
+
+While most of the foundation is complete, there are some key missing features that we're working on. The most noticiable one is that you can only save links - we do not yet support adding arbitrary files (e.g. images, pdfs, etc). This is next on our list to complete.
+
+Feel free to add issues your come across to [issues]([url](https://github.com/johnmidgley/opencola-alpha/issues)) for this repo. We have also set up a forum on dicord to help users as well as let them help each other. 
+
+You're also welcome to share this alpha with friends, but we are limited on the amount of support we can provide, so we will prioritize those on the alpha list.
 
 # Installation
 
