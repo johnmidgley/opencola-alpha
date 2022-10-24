@@ -128,10 +128,11 @@ The various icons mean:
 
 | Icon | Description |
 | --- | --- |
-| <img src="img/save.png" width="15" /> | Save the current page (Add to feed, store archive, and index for search) |
-| <img src="img/like.png" width="15" /> | Like the current page (saves page implicitly |
-| <img src="img/trust.png" width="15" /> | Trust the current page (saves page implicitly) | 
-| <img src="img/search.png" width="15" /> | Go to search / feed page | 
+| <img src="img/green-light-icon.svg" width="25" /> | Staus of the extension. Green means all good, yellow means working, and red means error. Check the Javascript console for more info on error. |
+| <img src="img/save.png" width="25" /> | Save the current page (Add to feed, store archive, and index for search) |
+| <img src="img/like.png" width="25" /> | Like the current page (saves page implicitly |
+| <img src="img/trust.png" width="25" /> | Trust the current page (saves page implicitly) | 
+| <img src="img/search.png" width="25" /> | Go to search / feed page | 
 
 
 
