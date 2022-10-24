@@ -134,6 +134,27 @@ The various icons mean:
 | <img src="img/trust.png" width="25" /> | Trust the current page (saves page implicitly) | 
 | <img src="img/search.png" width="25" /> | Go to search / feed page | 
 
+# Understanding Your Feed
+
+You can add items to your feed by using the toolbar or creating organic (not tied to a url) posts using the <img src="img/new-post.png" width="15" /> button at the top right of the feed page. Once you've added to your feed, it will look something like (annotations in red):
+
+<img src="img/annotatedPost.png" width="800" />
+
+You can see activty for the post as well as take action by using the action bar at the bottom. If you click the action icon, the corresponding action will be taken. Underlined (with a grey bar) action icons indicate actions that you have taken yourself. The number beside the icon indicates how many actions of that type have occured. You can see the individual actions by clicking expand (<img src="img/show.png" width="15" />) icon. 
+
+| Action | Description |
+| --- | --- |
+| <img src="img/save.png" width="20" /> | Save the post. This essentially copies the post and allows any of your peers to see it as if it came from you. |
+| <img src="img/like.png" width="20" /> | Like the post (save post implicitly) |
+| <img src="img/tag.png" width="20" /> | Add tags to the post |
+| <img src="img/comment.png" width="20" /> | Comment on the post (save post implicitly) |
+| <img src="img/edit.png" width="20" /> | Edit the post. Gives you an option to delete the post (if it was yours) |
+
+
+
+
+
+
 
 
 
