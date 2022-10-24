@@ -156,7 +156,7 @@ You can search your feed by entering a query in the search box. Currently, searc
 
 To add a peer, click the <img src="img/peers.png" width="15" /> icon at the top right of your feed and then click the <img src="img/add-peer.png" width="15" /> icon. 
 
-<img src="img/addPeeer.png" width="800" />
+<img src="img/addPeer.png" width="800" />
 
 Copy the token beside "Give this token to your peer:" and give it to a peer (via Signal, email, sms, etc). Enter the token you receive from the peer in the other box. Click "Add" - edit the name a image url if desired, and then click "Save".
 
