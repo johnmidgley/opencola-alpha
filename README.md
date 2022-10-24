@@ -150,7 +150,7 @@ You can see activty for the post as well as take action by using the action bar 
 | <img src="img/comment.png" width="20" /> | Comment on the post (save post implicitly) |
 | <img src="img/edit.png" width="20" /> | Edit the post. Gives you an option to delete the post (if it was yours) |
 
-
+You can search your feed by entering a query in the search box. Currently, search is exact match only, but will be improved in the future.
 
 
 
