@@ -69,7 +69,7 @@ You can now navigate to https://localhost:5796. (You can use plain http link too
 
 <img src="img/setPassword.png" width="800" />
 
-Enter a password and confim it. You will then be prompted to enter a username and your password to continue. The user name can be anything you like, but so you don't forget it, you must set it in the config file (storage/opencola-server.yaml) and is used for web authentication. Once your password is set, you'll be prompted to login to the app. Using the default username 'oc' the page looks like:
+Enter a password and confim it. You will then be prompted to enter a username and your password to continue. The user name is used for web authentication. It can be anything you like, but if you want to change it, you must set it in the config file (storage/opencola-server.yaml). Once your password is set, you'll be prompted to login to the app. Using the default username 'oc' the page looks like:
 
 <img src="img/startApp.png" width="800" />
 
