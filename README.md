@@ -90,10 +90,10 @@ start.bat
 
 You'll see a number of log lines and then a browser window will open to set a password.
 
-To install certificates so that you can use https, change to your home directory and then:
+To install certificates so that you can use https:
 
 ```
-cd AppData\Roaming\opencola\storage\cert
+cd %USERPROFILE%\AppData\Roaming\opencola\storage\cert
 install-cert.bat
 ```
 
