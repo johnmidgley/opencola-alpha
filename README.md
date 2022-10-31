@@ -78,7 +78,45 @@ Server started - visit http://localhost:5795
 </details>
 
 <details><summary>Windows</summary>TBD</details>
-<details><summary>Linux</summary>TBD</details> 
+<details><summary>Linux</summary>
+
+```
+cd unix
+./start
+```
+
+You should see output similar to:
+
+```
+Creating storage
+No SSL certificate found
+Creating network "opencola_default" with the default driver
+Building oc
+Creating opencola-server ... done
+Docker container started
+Waiting for certificate creation
+New certs have been created. Install (y/n)?
+```
+
+If this is the first time you're starting OpenCola, a TLS certificate will have been generated so that you can use OpenCola over https[^1]. Enter 'y' to install the certificate. On linux, this must be done manually, so follow the instructions that are output:
+
+```
+A certificate has been placed at ~/opencola-ssl.pem
+You must manually install it into your browser. For Chome based browsers:
+ 1. Open chrome://settings/certificates in your browser
+      (or brave://settings/certificates for Brave)
+ 2. Select the 'Authorities' tab
+ 3. Click the 'Import' button'
+ 4. Select 'opencola-ssl.pem' from your home directory
+ 5. Check 'Trust this certificate for identifying websites'
+ 6. Click 'OK'
+
+~/dev/opencola/install/unix
+Server started - visit http://localhost:5795
+                   or https://localhost:5796 (Secure - recommended)
+```                   
+
+</details> 
  
  Once you've followed the instructions for you OS, navigate to https://localhost:5796. (You can use plain http link too, but it is not secure)
  
