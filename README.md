@@ -40,7 +40,9 @@ In order to make sure that OpenCola runs at startup / login, set docker to start
 
 # Starting OpenCola
 
-Open a terminal and navigate to $OPENCOLA. 
+Open a terminal and navigate to $OPENCOLA. Then follow the instructions for you OS:
+
+<details><summary>MacOS</summary>
 
 ```
 cd unix
@@ -73,11 +75,23 @@ Server started - visit http://localhost:5795
                    or https://localhost:5796 (Secure - recommended)
 ```
 
-You can now navigate to https://localhost:5796. (You can use plain http link too, but it is not secure). The first time you start OpenCola, you'll be prompted to set a password:
+</details>
+
+<details><summary>Windows</summary>TBD</details>
+<details><summary>Linux</summary>TBD</details> 
+ 
+ Once you've followed the instructions for you OS, navigate to https://localhost:5796. (You can use plain http link too, but it is not secure)
+ 
+## Setting a Password
+The first time you start OpenCola, you'll be prompted to set a password:
 
 <img src="img/setPassword.png" width="800" />
 
-Enter a password and confim it. You will then be prompted to enter a username and your password to continue. The user name is used for web authentication. It can be anything you like, but if you want to change it, you must set it in the config file (storage/opencola-server.yaml). Once your password is set, you'll be prompted to login to the app. Using the default username 'oc' the page looks like:
+Enter a password and confim it. 
+
+## Logging in
+
+After setting your password, or whenever you start OpenCola thereafter, you will be prompted to enter a username and your password to continue. The user name is used for web authentication. It can be anything you like, but if you want to change it, you must set it in the config file (storage/opencola-server.yaml). Once your password is set, you'll be prompted to login to the app. Using the default username 'oc' the page looks like:
 
 <img src="img/startApp.png" width="800" />
 
