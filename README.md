@@ -77,7 +77,27 @@ Server started - visit http://localhost:5795
 
 </details>
 
-<details><summary>Windows</summary>TBD</details>
+<details><summary>Windows</summary>
+
+1. Click the Start icon in the taskbar or hit the windows key. 
+2. Type 'command prompt'
+3. Click "Run as Administrator"
+
+```
+cd $OPENCOLA\windows
+start.bat
+```
+
+You'll see a number of log lines and then a browser window will open to set a password.
+
+To install certificates so that you can use https, change to your home directory and then:
+
+```
+cd AppData\Roaming\opencola\storage\cert
+install-cert.bat
+```
+
+</details>
 <details><summary>Linux</summary>
 
 ```
