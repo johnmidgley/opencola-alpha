@@ -45,7 +45,7 @@ Open a terminal and navigate to $OPENCOLA. Then follow the instructions for you 
 <details><summary>MacOS</summary>
 
 ```
-cd unix
+cd mac
 ./start
 ```
 
@@ -101,7 +101,7 @@ install-cert.bat
 <details><summary>Linux</summary>
 
 ```
-cd unix
+cd linux
 ./start
 ```
 
