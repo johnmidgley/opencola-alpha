@@ -4,7 +4,7 @@
 
 Welcome to the OpenCola alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. 
 
-While most of the foundation is complete, there are some key missing features that we're working on. The most noticiable one is that you can only save links - we do not yet support adding arbitrary files (e.g. images, pdfs, etc). This is next on our list to complete.
+While most of the foundation is complete, there are some key missing features that we're working on.
 
 Feel free to add issues your come across to [issues](https://github.com/johnmidgley/opencola-alpha/issues) for this repo. We have also set up a forum on discord to help users as well as let them help each other. 
 
