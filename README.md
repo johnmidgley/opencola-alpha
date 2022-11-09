@@ -2,11 +2,11 @@
 
 # opencola-alpha
 
-Welcome to the OpenCola alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. 
+Welcome to the OpenCola alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles.
 
 While most of the foundation is complete, there are some key missing features that we're working on.
 
-Feel free to add issues your come across to [issues](https://github.com/johnmidgley/opencola-alpha/issues) for this repo. We have also set up a forum on discord to help users as well as let them help each other. 
+Feel free to add issues your come across to [issues](https://github.com/johnmidgley/opencola-alpha/issues) for this repo. We have also set up a forum on discord to help users as well as let them help each other.
 
 You're also welcome to share this alpha with friends, but we are limited on the amount of support we can provide, so we will prioritize those on the alpha list.
 
@@ -64,7 +64,7 @@ New certs have been created. Install (y/n)?
 
 If this is the first time you're starting OpenCola, a TLS certificate will have been generated so that you can use OpenCola over https[^1]. Enter 'y' to install the certificate. This requires sudo access, so you will have to enter your system password on the command line, and once again in a UI dialog for the key tool.
 
-[^1]: You can always generate new certificates by stopping your server, deleting storage/cert/opencola-ssl* and restarting your server. 
+[^1]: You can always generate new certificates by stopping your server, deleting storage/cert/opencola-ssl* and restarting your server.
 
 ```
 y
@@ -79,7 +79,7 @@ Server started - visit http://localhost:5795
 
 <details><summary>Windows</summary>
 
-1. Click the Start icon in the taskbar or hit the windows key. 
+1. Click the Start icon in the taskbar or hit the windows key.
 2. Type 'command prompt'
 3. Click "Run as Administrator"
 
@@ -136,16 +136,16 @@ Server started - visit http://localhost:5795
                    or https://localhost:5796 (Secure - recommended)
 ```                   
 
-</details> 
- 
+</details>
+
  Once you've followed the instructions for you OS, navigate to https://localhost:5796. (You can use plain http link too, but it is not secure)
- 
+
 ## Setting a Password
 The first time you start OpenCola, you'll be prompted to set a password:
 
 <img src="img/setPassword.png" width="800" />
 
-Enter a password and confim it. 
+Enter a password and confim it.
 
 ## Logging in
 
@@ -186,11 +186,11 @@ OpenCola comes with a browser extension. It currenlty only works with Chrome bas
 
 <img src="img/manageExtensions.png" width="800" />
 
-In the future, we will provide the extension in the Web Store, but for now you must install it manually. To do so, click the "Developer mode" slider: 
+In the future, we will provide the extension in the Web Store, but for now you must install it manually. To do so, click the "Developer mode" slider:
 
 <img src="img/enableDeveloperMode.png" width="800" />
 
-Then click "Load Unpacked" and select the folder $OPENCOLA/chrome. 
+Then click "Load Unpacked" and select the folder $OPENCOLA/chrome.
 
 <img src="img/openColaExtensionEnabled.png" width="800" />
 
@@ -211,8 +211,8 @@ The various icons mean:
 | <img src="img/green-light-icon.svg" width="25" /> | Staus of the extension. Green means all good, yellow means working, and red means error. Check the Javascript console for more info on error. |
 | <img src="img/save.png" width="25" /> | Save the current page (Add to feed, store archive, and index for search) |
 | <img src="img/like.png" width="25" /> | Like the current page (saves page implicitly |
-| <img src="img/trust.png" width="25" /> | Trust the current page (saves page implicitly) | 
-| <img src="img/search.png" width="25" /> | Go to search / feed page | 
+| <img src="img/trust.png" width="25" /> | Trust the current page (saves page implicitly) |
+| <img src="img/search.png" width="25" /> | Go to search / feed page |
 
 # Understanding Your Feed
 
@@ -220,7 +220,7 @@ You can add items to your feed by using the toolbar or creating organic (not tie
 
 <img src="img/annotatedPost.png" width="800" />
 
-You can see activty for the post as well as take action by using the action bar at the bottom. If you click the action icon, the corresponding action will be taken. Underlined (with a grey bar) action icons indicate actions that you have taken yourself. The number beside the icon indicates how many actions of that type have occured. You can see the individual actions by clicking expand (<img src="img/show.png" width="15" />) icon. 
+You can see activty for the post as well as take action by using the action bar at the bottom. If you click the action icon, the corresponding action will be taken. Underlined (with a grey bar) action icons indicate actions that you have taken yourself. The number beside the icon indicates how many actions of that type have occured. You can see the individual actions by clicking expand (<img src="img/show.png" width="15" />) icon.
 
 | Action | Description |
 | --- | --- |
@@ -234,18 +234,13 @@ You can search your feed by entering a query in the search box. Currently, searc
 
 # Adding Peers
 
-To add a peer, click the <img src="img/peers.png" width="15" /> icon at the top right of your feed and then click the <img src="img/add-peer.png" width="15" /> icon. 
-
+To add a peer, click the <img src="img/peers.png" width="15" /> icon at the top right of your feed and then click the <img src="img/add-peer.png" width="15" /> icon.
 <img src="img/addPeer.png" width="800" />
 
 Copy the token beside "Give this token to your peer:" and give it to a peer (via Signal, email, sms, etc). Enter the token you receive from the peer in the other box. Click "Add" - edit the name a image url if desired, and then click "Save".
 
-By default you will be using the OpenCola Relay server (ocr://relay.opencola.net) to communicate with peers. Communication is end to end encrypted, but does travel through a central server. There are more advanced options (Tor, ZeroTier VPN) that will be documented, but are not for the faint of heart, so we default to the relay server as a "batteries included" solution. 
+By default you will be using the OpenCola Relay server (ocr://relay.opencola.net) to communicate with peers. Communication is end to end encrypted, but does travel through a central server. There are more advanced options (Tor, ZeroTier VPN) that will be documented, but are not for the faint of heart, so we default to the relay server as a "batteries included" solution.
 
 # Removing Peers
 
 You can "disconnect" from a peer without losing any of the posts your have accumulated by simply unchecking the box beside the <img src="img/refresh.png" width="15" /> icon for the peer. If you want to completely disconnect, edit the peer and click "Delete".
-
-
-
-
