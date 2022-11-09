@@ -12,6 +12,9 @@ You're also welcome to share this alpha with friends, but we are limited on the 
 
 ## Prerequisites
 
+<details><summary>Install Docker</summary>
+ <br/>
+ 
 Download and install Docker from https://www.docker.com/
 
 <details><summary>Why Docker?</summary>
@@ -30,6 +33,7 @@ In order to make sure that OpenCola runs at startup / login, set docker to start
 
 <img src="img/dockerSettings.png" width="800" />
 
+</details>
 
 ## Install OpenCola
 
