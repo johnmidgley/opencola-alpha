@@ -2,7 +2,7 @@
 
 # opencola-alpha
 
-Welcome to the OpenCola alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. While most of the foundation is complete, we will continually be working on adding new features.
+Welcome to the OpenCola alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. While a lot of the foundation is complete, we will continually be working on adding new features.
 
 Feel free to add issues your come across to [issues](https://github.com/johnmidgley/opencola-alpha/issues) for this repo or email dev@opencola.io.
 
