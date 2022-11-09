@@ -69,9 +69,7 @@ If this is the first time you're starting OpenCola, a TLS certificate will have 
 
 ```
 y
-~/.opencola/storage/cert ~/dev/opencola/install/mac
 Password:
-~/dev/opencola/install/mac
 Server started
 
 Insecure URLS:
