@@ -139,9 +139,17 @@ You must manually install it into your browser. For Chome based browsers:
  5. Check 'Trust this certificate for identifying websites'
  6. Click 'OK'
 
-~/dev/opencola/install/unix
-Server started - visit http://localhost:5795
-                   or https://localhost:5796 (Secure - recommended)
+Server started
+
+Insecure URLS:
+http://localhost:5795 (Local only)
+http://192.168.50.127:5795
+http://172.19.0.1:5795
+
+Secure URLs (Recommended):
+https://localhost:5796 (Local only)
+https://192.168.50.127:5796
+https://172.19.0.1:5796
 ```                   
 </details>
 <p>
