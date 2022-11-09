@@ -248,7 +248,7 @@ We currently do not have native mobile apps. To access OpenCola on a mobile devi
 We currently have not built any services that allow you to access you OpenCola server from anywhere (i.e. outside the LAN it's running on). For the time being, we rely on ZeroTier, an open source project that allows you to create private VPNs. We recognize that this is not for the faint of heart, and will provide a more seamless solution in the future.
 
 <details><summary>Setting up ZeroTier</summary>
-
+<br/>
 In order to use ZeroTier, you must create an account, set up a network, and run the client on any devices that are running or would like to access OpenCola.
 
 To create an account, simply go to [ZeroTier](https://www.zerotier.com/) and sign up. Once signed, up, navigate to your [networks](https://my.zerotier.com/network), which should look something like:
@@ -292,7 +292,8 @@ For any other device, you will need to copy and add the certificates manually (i
 
 </details>
 <details><summary>Computer</summary>
-
+<br/>
+ 
 To access OpenCola over https from another computer, simply copy the `install-cert` (or `install-cert.ps1` on Windows) and `opencola-ssl.der` to the same directory on the computer and runs:
 ```
 ./install-cert
@@ -301,7 +302,8 @@ To access OpenCola over https from another computer, simply copy the `install-ce
 
 </details>
 <details><summary>iOS</summary>
-
+<br/>
+ 
 1. From ~/.opencola/storage/cert, copy `opencola-ssl.pem` to your device. The simplest way to do this is just to mail it to your device as an attachment and then save it to your local files.
 1. Open "Files" (Swipe down on your main menu, type files into the search and then open the app)
 1. In Locations, select "On My iPhone", then "Downloads"
@@ -319,7 +321,8 @@ To access OpenCola over https from another computer, simply copy the `install-ce
 
 </details>
 <details><summary>Android</summary>
-
+<br/>
+ 
 1. From ~/.opencola/storage/cert, copy `opencola-ssl.der` to `opencola-ssl.crt` and then trandfer it to your device. The simplest way to do this is just to mail it to your device as an attachment and then save it to your local files.
 1. On your Android admin dashboard go to Settings > Security
 1. Under Credential Storage click on Install from Phone Storage/Install from SD Card
@@ -327,4 +330,5 @@ Note: if you don’t have this option, navigate to Advanced Settings > Security 
 1. The File Storage Manager will appear. Locate your SSL Certificate from your device
 1. In the Certificate Name field, enter a friendly name for your certificate
 1. Under Credential Use select VPN and Apps or Wi-Fi based on your security requirements.
+
 </details>
