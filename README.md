@@ -177,11 +177,12 @@ Fields:
 
 # The Browser Extenion
 
-## Installing the Extension
+OpenCola comes with a browser extension. It currenlty only works with Chrome based browsers (e.g. Chrome, Chromium, Brave, Edge). We will provide other extnsions in the future.
 
-<details><summary>Instructions</summary>
+ <details><summary>Installation Instructions</summary>
+ <br/>
   
-OpenCola comes with a browser extension. It currenlty only works with Chrome based browsers (e.g. Chrome, Chromium, Brave, Edge). We will provide other extnsions in the future. To install the extension, go to your browsers extensions page. In Brave, navigate to brave://extensions, which looks like:
+ To install the extension, go to your browsers extensions page. In Brave, navigate to brave://extensions, which looks like:
 
 <img src="img/manageExtensions.png" width="800" />
 
@@ -198,8 +199,6 @@ Lastly, pin the extension to your toolbar (so it's always visible) by clicking t
 <img src="img/pinExtension.png" width="800" />
 
 </details>
-
-## Using the Extension
 
 To use the extension, simply click the OpenCola icon in the toolbar:
 
