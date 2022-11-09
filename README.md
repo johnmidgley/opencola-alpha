@@ -60,9 +60,8 @@ Waiting for certificate creation
 New certs have been created. Install (y/n)?
 ```
 
-If this is the first time you're starting OpenCola, a TLS certificate will have been generated so that you can use OpenCola over https[^1]. Enter 'y' to install the certificate. This requires sudo access, so you will have to enter your system password on the command line, and once again in a UI dialog for the key tool.
+If this is the first time you're starting OpenCola, a TLS certificate will have been generated so that you can use OpenCola over https. Enter 'y' to install the certificate. This requires sudo access, so you will have to enter your system password on the command line, and once again in a UI dialog for the key tool.
 
-[^1]: You can always generate new certificates by stopping your server, deleting storage/cert/opencola-ssl* and restarting your server.
 
 ```
 y
@@ -116,7 +115,7 @@ Waiting for certificate creation
 New certs have been created. Install (y/n)?
 ```
 
-If this is the first time you're starting OpenCola, a TLS certificate will have been generated so that you can use OpenCola over https[^1]. Enter 'y' to install the certificate. On linux, this must be done manually, so follow the instructions that are output:
+If this is the first time you're starting OpenCola, a TLS certificate will have been generated so that you can use OpenCola over https. Enter 'y' to install the certificate. On linux, this must be done manually, so follow the instructions that are output:
 
 ```
 A certificate has been placed at ~/opencola-ssl.pem
