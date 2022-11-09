@@ -2,11 +2,9 @@
 
 # opencola-alpha
 
-Welcome to the OpenCola alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles.
+Welcome to the OpenCola alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. While most of the foundation is complete, we will continually be working on adding new features.
 
-While most of the foundation is complete, there are some key missing features that we're working on.
-
-Feel free to add issues your come across to [issues](https://github.com/johnmidgley/opencola-alpha/issues) for this repo. We have also set up a forum on discord to help users as well as let them help each other.
+Feel free to add issues your come across to [issues](https://github.com/johnmidgley/opencola-alpha/issues) for this repo or email dev@opencola.io.
 
 You're also welcome to share this alpha with friends, but we are limited on the amount of support we can provide, so we will prioritize those on the alpha list.
 
@@ -135,36 +133,31 @@ You must manually install it into your browser. For Chome based browsers:
 Server started - visit http://localhost:5795
                    or https://localhost:5796 (Secure - recommended)
 ```                   
-
 </details>
+<p>
 
- Once you've followed the instructions for you OS, navigate to https://localhost:5796. (You can use plain http link too, but it is not secure)
+Once you've followed the instructions for you OS, navigate to https://localhost:5796. (You can use plain http link too, but it is not secure)
 
 ## Setting a Password
 The first time you start OpenCola, you'll be prompted to set a password:
-
 <img src="img/setPassword.png" width="800" />
 
-Enter a password and confim it.
+Enter a password and confirm it.
 
 ## Logging in
 
 After setting your password, or whenever you start OpenCola thereafter, you will be prompted to enter a username and your password to continue. The user name is used for web authentication. It can be anything you like, but if you want to change it, you must set it in the config file (storage/opencola-server.yaml). Once your password is set, you'll be prompted to login to the app. Using the default username 'oc' the page looks like:
-
 <img src="img/startApp.png" width="800" />
 
-Lastly, you will need to authenticate your browser:
-
+Lastly, you will need to authenticate your browser. (This step is currently necessary because we're using digest-auth. We'll likely switch to a cookie based auth which would remove this step):
 <img src="img/browserAuthenticate.png" width="800" />
 
 Now OpenCola is ready to use, and you will see your (empty if this is the first time running) feed:
-
 <img src="img/emptyFeed.png" width="800" />
 
 # Setting up Your User
 
 You can set a display name and image for yourself in peer settings by clicking the <img src="img/peers.png" width="15" /> icon:
-
 <img src="img/setInfo.png" width="800" />
 
 Fields:
@@ -174,7 +167,7 @@ Fields:
 | <img src="img/peers.png" width="15" /> | Name visible to peers when you connect (more later) |
 | <img src="img/id.png" width="15" /> | Your gobally unique OpenCola user id - not changeable |
 | <img src="img/key.png" width="15" /> | A cryptogrpahic public key used to encrypt and sign data - not changeable yet |
-| <img src="img/link.png" width="15" /> | The address at which peers can request data from you. Default is to use the OpencCola relay server (more later) |
+| <img src="img/link.png" width="15" /> | The address at which peers can request data from you. Default is to use the OpencCola relay server (see [Adding Peers](#adding-peers) for more details) |
 | <img src="img/photo.png" width="15" /> | Url of image for your picture. This has to be a web link right now. |
 | <img src="img/refresh.png" width="15" /> | Whether or not the user is actively being sychronized with (more later) |
 
@@ -244,3 +237,43 @@ By default you will be using the OpenCola Relay server (ocr://relay.opencola.net
 # Removing Peers
 
 You can "disconnect" from a peer without losing any of the posts your have accumulated by simply unchecking the box beside the <img src="img/refresh.png" width="15" /> icon for the peer. If you want to completely disconnect, edit the peer and click "Delete".
+
+# OpenCola on Mobile
+
+We currently do not have native mobile apps. To access OpenCola on a mobile device, simply navigate to one of the (non-local) urls listed at startup. This works when on the same LAN as your server. To access anywhere, see the next section.
+
+# Accessing OpenCola from Anywhere
+
+We currently have not built any services that allow you to access you OpenCola server from anywhere (i.e. outside the LAN it's running on). For the time being, we rely on ZeroTier, an open source project that allows you to create private VPNs. We recognize that this is not for the faint of heart, and will provide a more seamless solution in the future.
+
+## Setting up ZeroTier
+
+In order to use ZeroTier, you must create an account, set up a network, and run the client on any devices that are running or would like to access OpenCola.
+
+To create an account, simply go to [ZeroTier](https://www.zerotier.com/) and sign up. Once signed, up, navigate to your [networks](https://my.zerotier.com/network), which should look something like:
+<img src="img/zt-create-network.png" />
+
+Click "Create A Network". A network with a random name will be created, something like:
+<img src="img/zt-network-created.png" />
+
+Click on the network to edit it. While there are many settings on the page, you can just use the defaults. It is helpful to give the network a meaningful name (e.g. opencola):
+<img src="img/zt-edit-network.png" />
+
+Take note of the network id (in this case, 632ea290854c7435). For each device you would like to add to the network, [download](https://www.zerotier.com/download/) and install the client. Once installed, you need to join the network. To do this, open ZeroTier on your device and add your network:
+- On Mac, click the ZeroTier icon in your menu bar, "Open Control Panel", and enter the network id in the box beside "Join Network" at the bottom.
+- On iOS, open the app, click + at the top right, Accept the terms and then enter the NetworkId
+
+Other OSs we haven't tried yet, but the process should be similar.
+
+Once your devices have been added, return to the network and scroll to the "Members" section and check the "Auth?" box beside the addresses you've added.
+<img src="img/zt-edit-members.png" />
+
+Each device will now have an additional ip address assigned, which will be in the range set for the network (scroll to IPv4 Auto-Assing in the network config):
+<img src="img/zt-ip-address.png" />
+
+Go to go the machine running opencola (that you should have installed ZeroTier on) and restart the server by running the following commands in your OpenCola os directory:
+```
+./stop
+./start
+```
+You'll notice new access urls that with a new ip address. You can use these addresses to access OpenCola from anywhere. The VPN is private and secure (traffic is encrypted), so you can use http if you like, or https to be extra safe.  
