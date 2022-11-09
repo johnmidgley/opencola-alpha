@@ -147,7 +147,7 @@ Enter a password and confirm it.
 ## Logging in
 
 After setting your password, or whenever you start OpenCola thereafter, you will be prompted to enter a username and your password to continue. The user name is used for web authentication. It can be anything you like, but if you want to change it, you must set it in the config file (storage/opencola-server.yaml). Once your password is set, you'll be prompted to login to the app. Using the default username 'oc' the page looks like:
- 
+
 <img src="img/startApp.png" width="800" />
 
 Lastly, you will need to authenticate your browser. (This step is currently necessary because we're using digest-auth. We'll likely switch to a cookie based auth which would remove this step):
@@ -241,13 +241,13 @@ You can "disconnect" from a peer without losing any of the posts your have accum
 
 # OpenCola on Mobile
 
-We currently do not have native mobile apps. To access OpenCola on a mobile device, simply navigate to one of the (non-local) urls listed at startup. This works when on the same LAN as your server. To access anywhere, see the next section.
+We currently do not have native mobile apps. To access OpenCola on a mobile device, simply navigate to one of the (non-local) urls listed at startup (if you want to use https, see [Installing Certificate](#installing-certificates) below). This works when on the same LAN as your server. To access anywhere, see the next section.
 
 # Accessing OpenCola from Anywhere
 
 We currently have not built any services that allow you to access you OpenCola server from anywhere (i.e. outside the LAN it's running on). For the time being, we rely on ZeroTier, an open source project that allows you to create private VPNs. We recognize that this is not for the faint of heart, and will provide a more seamless solution in the future.
 
-## Setting up ZeroTier
+<details><summary>Setting up ZeroTier</summary>
 
 In order to use ZeroTier, you must create an account, set up a network, and run the client on any devices that are running or would like to access OpenCola.
 
@@ -270,8 +270,8 @@ Once your devices have been added, return to the network and scroll to the "Memb
 
  <img src="img/zt-edit-members.png" width="800" />
 
-Each device will now have an additional ip address assigned, which will be in the range set for the network (scroll to IPv4 Auto-Assing in the network config):
- 
+Each device will now have an additional ip address assigned, which will be in the range set for the network (scroll to IPv4 Auto-Assign in the network config):
+
 <img src="img/zt-ip-address.png" width="800" />
 
 Go to go the machine running opencola (that you should have installed ZeroTier on) and restart the server by running the following commands in your OpenCola os directory:
@@ -279,4 +279,52 @@ Go to go the machine running opencola (that you should have installed ZeroTier o
 ./stop
 ./start
 ```
-You'll notice new access urls that with a new ip address. You can use these addresses to access OpenCola from anywhere. The VPN is private and secure (traffic is encrypted), so you can use http if you like, or https to be extra safe.  
+You'll notice new access urls that with a new ip address. You can use these addresses to access OpenCola from anywhere. The VPN is private and secure (traffic is encrypted), so you can use http if you like, or https to be extra safe. If you decide to use https, make sure to regenerate new certificates (that will include the ZeroTier ip address), as described next.
+
+</details>
+
+# Installing Certificates
+
+The first time you start OpenCola, it will generate certificates so that you can access the application over https without security warnings. These certificates will be placed in ~/.opencola/storage/cert. If you ever need to generate new ones, simply delete the generated files (opencola-ssl*) and restart your server. This will create new certificates and prompt you to install on the local machine.
+
+For any other device, you will need to copy and add the certificates manually (in the future, with mobile apps, this won't be required). If you're not concerned about security (e.g. if you're on your local network or using ZeroTier), you can just use the http access links and skip the install steps below.
+
+
+</details>
+<details><summary>Computer</summary>
+
+To access OpenCola over https from another computer, simply copy the `install-cert` (or `install-cert.ps1` on Windows) and `opencola-ssl.der` to the same directory on the computer and runs:
+```
+./install-cert
+```
+</details>
+
+</details>
+<details><summary>iOS</summary>
+
+1. From ~/.opencola/storage/cert, copy `opencola-ssl.pem` to your device. The simplest way to do this is just to mail it to your device as an attachment and then save it to your local files.
+1. Open "Files" (Swipe down on your main menu, type files into the search and then open the app)
+1. In Locations, select "On My iPhone", then "Downloads"
+1. Tap `opencola-ssl.pem`. A dialog will tell you that the profile has been downloaded
+1. Open "Settings". Under your name, tap the "Profile Downloaded" section
+1. Click "install" at the top right of the resulting "Install Profile" page
+1. Enter your passcode (if needed)
+1. Click "Install" at the top right (and in the next dialog)
+1. Go back to the "Settings" homepage, then to "General" -> "About"
+1. Scroll to the bottom and tap "Certificate and Trust Settings"
+1. Tap the slider next to "OpenCola" and click "Continue"
+
+
+</details>
+
+</details>
+<details><summary>Android</summary>
+
+1. From ~/.opencola/storage/cert, copy `opencola-ssl.der` to `opencola-ssl.crt` and then trandfer it to your device. The simplest way to do this is just to mail it to your device as an attachment and then save it to your local files.
+1. On your Android admin dashboard go to Settings > Security
+1. Under Credential Storage click on Install from Phone Storage/Install from SD Card
+Note: if you don’t have this option, navigate to Advanced Settings > Security or Advanced Settings > Privacy and click on Install from Phone Storage/Install from SD Card.
+1. The File Storage Manager will appear. Locate your SSL Certificate from your device
+1. In the Certificate Name field, enter a friendly name for your certificate
+1. Under Credential Use select VPN and Apps or Wi-Fi based on your security requirements.
+</details>
