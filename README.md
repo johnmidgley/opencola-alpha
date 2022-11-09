@@ -69,11 +69,18 @@ If this is the first time you're starting OpenCola, a TLS certificate will have 
 
 ```
 y
-~/.opencola/storage/cert ~/dev/opencola/install/unix
+~/.opencola/storage/cert ~/dev/opencola/install/mac
 Password:
-~/dev/opencola/install/unix
-Server started - visit http://localhost:5795
-                   or https://localhost:5796 (Secure - recommended)
+~/dev/opencola/install/mac
+Server started
+
+Insecure URLS:
+http://localhost:5795 (Local only)
+http://192.168.195.16:5795
+
+Secure URLs (Recommended):
+https://localhost:5796 (Local only)
+https://192.168.195.16:5796
 ```
 
 </details>
