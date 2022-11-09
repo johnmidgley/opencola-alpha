@@ -147,6 +147,7 @@ Enter a password and confirm it.
 ## Logging in
 
 After setting your password, or whenever you start OpenCola thereafter, you will be prompted to enter a username and your password to continue. The user name is used for web authentication. It can be anything you like, but if you want to change it, you must set it in the config file (storage/opencola-server.yaml). Once your password is set, you'll be prompted to login to the app. Using the default username 'oc' the page looks like:
+ 
 <img src="img/startApp.png" width="800" />
 
 Lastly, you will need to authenticate your browser. (This step is currently necessary because we're using digest-auth. We'll likely switch to a cookie based auth which would remove this step):
@@ -251,13 +252,13 @@ We currently have not built any services that allow you to access you OpenCola s
 In order to use ZeroTier, you must create an account, set up a network, and run the client on any devices that are running or would like to access OpenCola.
 
 To create an account, simply go to [ZeroTier](https://www.zerotier.com/) and sign up. Once signed, up, navigate to your [networks](https://my.zerotier.com/network), which should look something like:
-<img src="img/zt-create-network.png" />
+<img src="img/zt-create-network.png" width="800" />
 
 Click "Create A Network". A network with a random name will be created, something like:
-<img src="img/zt-network-created.png" />
+<img src="img/zt-network-created.png" width="800" />
 
 Click on the network to edit it. While there are many settings on the page, you can just use the defaults. It is helpful to give the network a meaningful name (e.g. opencola):
-<img src="img/zt-edit-network.png" />
+<img src="img/zt-edit-network.png" width="800" />
 
 Take note of the network id (in this case, 632ea290854c7435). For each device you would like to add to the network, [download](https://www.zerotier.com/download/) and install the client. Once installed, you need to join the network. To do this, open ZeroTier on your device and add your network:
 - On Mac, click the ZeroTier icon in your menu bar, "Open Control Panel", and enter the network id in the box beside "Join Network" at the bottom.
@@ -266,10 +267,12 @@ Take note of the network id (in this case, 632ea290854c7435). For each device yo
 Other OSs we haven't tried yet, but the process should be similar.
 
 Once your devices have been added, return to the network and scroll to the "Members" section and check the "Auth?" box beside the addresses you've added.
-<img src="img/zt-edit-members.png" />
+
+ <img src="img/zt-edit-members.png" width="800" />
 
 Each device will now have an additional ip address assigned, which will be in the range set for the network (scroll to IPv4 Auto-Assing in the network config):
-<img src="img/zt-ip-address.png" />
+ 
+<img src="img/zt-ip-address.png" width="800" />
 
 Go to go the machine running opencola (that you should have installed ZeroTier on) and restart the server by running the following commands in your OpenCola os directory:
 ```
