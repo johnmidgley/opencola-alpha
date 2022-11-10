@@ -134,11 +134,13 @@ CertUtil: -addstore command completed successfully.
 Server Started
 
 Insecure URLs:
+http://localhost:5795
 http://172.20.112.1:5795
 http://192.168.50.204:5795
 http://127.0.0.1:5795
 
 Secure URLs:
+https://localhost:5796
 https://172.20.112.1:5796
 https://192.168.50.204:5796
 https://127.0.0.1:5796
