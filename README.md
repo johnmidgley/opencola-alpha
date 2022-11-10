@@ -94,6 +94,15 @@ cd $OPENCOLA\windows
 ./start
 ```
 
+ > **NOTE:** If this fails, it's likely because script execution is disabled. To enable script execution:
+ > ```
+ > Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
+ > ```
+ > If you'd like to disable script execution when you're done:
+ > ```
+ > Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Restricted -Force
+ > ```
+ 
 You should see output similar to:
 
 ```
