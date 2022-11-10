@@ -14,7 +14,7 @@ You're also welcome to share this alpha with friends, but we are limited on the 
 
 <details><summary>Install Docker</summary>
  <br/>
- 
+
 Download and install Docker from https://www.docker.com/
 
 <details><summary>Why Docker?</summary>
@@ -102,7 +102,7 @@ cd $OPENCOLA\windows
  > ```
  > Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Restricted -Force
  > ```
- 
+
 You should see output similar to:
 
 ```
@@ -133,7 +133,7 @@ Use 'docker scan' to run Snyk tests against images to find vulnerabilities and l
 Waiting for certificate creation
 New certificate found. Install? [y/n]:
 ```
-If this is the first time you're starting OpenCola, a TLS certificate will have been generated so that you can use OpenCola over https. Enter 'y' to install the certificate - **This requires administrator access and will fail if PowerShell is not run as administrator**. 
+If this is the first time you're starting OpenCola, a TLS certificate will have been generated so that you can use OpenCola over https. Enter 'y' to install the certificate - **This requires administrator access and will fail if PowerShell is not run as administrator**.
 
 ```
 ROOT "Trusted Root Certification Authorities"
@@ -157,7 +157,7 @@ https://127.0.0.1:5796
 Waiting to launch browser...
 ```
 
-In a few seconds, a browser will launch the OpenCola start page. 
+In a few seconds, a browser will launch the OpenCola start page.
 
 If certificate install failed (e.g. if you forgot to run PowerShell as Administrator), you can install the certificates manually by running PowerShell as Administrator and then:
 
@@ -257,7 +257,7 @@ OpenCola comes with a browser extension. It currenlty only works with Chrome bas
 
  <details><summary>Installation Instructions</summary>
  <br/>
-  
+
  To install the extension, go to your browsers extensions page. In Brave, navigate to brave://extensions, which looks like:
 
 <img src="img/manageExtensions.png" width="800" />
@@ -274,6 +274,16 @@ Lastly, pin the extension to your toolbar (so it's always visible) by clicking t
 
 <img src="img/pinExtension.png" width="800" />
 
+
+If you would like to use the extension on a different computer than where the server is running, install the extension and then set the service url in the extension's options  to point to the server:
+
+1. Right click the extension
+1. Select "Options"
+1. Edit the "Service Host" field
+1. Hit "Return" or click the "Save Button"
+
+<img src="img/extension-options.png" width="800" />
+
 </details>
 
 To use the extension, simply click the OpenCola icon in the toolbar:
@@ -289,6 +299,7 @@ The various icons mean:
 | <img src="img/like.png" width="25" /> | Like the current page (saves page implicitly |
 | <img src="img/trust.png" width="25" /> | Trust the current page (saves page implicitly) |
 | <img src="img/search.png" width="25" /> | Go to search / feed page |
+
 
 # Understanding Your Feed
 
@@ -375,7 +386,7 @@ For any other device, you will need to copy and add the certificates manually (i
 </details>
 <details><summary>Computer</summary>
 <br/>
- 
+
 To access OpenCola over https from another computer, simply copy the `install-cert` (or `install-cert.ps1` on Windows) and `opencola-ssl.der` to the same directory on the computer and runs:
 ```
 ./install-cert
@@ -385,7 +396,7 @@ To access OpenCola over https from another computer, simply copy the `install-ce
 </details>
 <details><summary>iOS</summary>
 <br/>
- 
+
 1. From ~/.opencola/storage/cert, copy `opencola-ssl.pem` to your device. The simplest way to do this is just to mail it to your device as an attachment and then save it to your local files.
 1. Open "Files" (Swipe down on your main menu, type files into the search and then open the app)
 1. In Locations, select "On My iPhone", then "Downloads"
@@ -404,7 +415,7 @@ To access OpenCola over https from another computer, simply copy the `install-ce
 </details>
 <details><summary>Android</summary>
 <br/>
- 
+
 1. From ~/.opencola/storage/cert, copy `opencola-ssl.der` to `opencola-ssl.crt` and then trandfer it to your device. The simplest way to do this is just to mail it to your device as an attachment and then save it to your local files.
 1. On your Android admin dashboard go to Settings > Security
 1. Under Credential Storage click on Install from Phone Storage/Install from SD Card
