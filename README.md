@@ -124,7 +124,7 @@ Use 'docker scan' to run Snyk tests against images to find vulnerabilities and l
 Waiting for certificate creation
 New certificate found. Install? [y/n]:
 ```
-If this is the first time you're starting OpenCola, a TLS certificate will have been generated so that you can use OpenCola over https. Enter 'y' to install the certificate (*This requires administrator access and will fail if not powershell as administrator*). 
+If this is the first time you're starting OpenCola, a TLS certificate will have been generated so that you can use OpenCola over https. Enter 'y' to install the certificate - **This requires administrator access and will fail if powershell is not run as administrator**. 
 
 ```
 ROOT "Trusted Root Certification Authorities"
