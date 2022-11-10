@@ -86,21 +86,73 @@ https://192.168.195.16:5796
 <details><summary>Windows</summary>
 
 1. Click the Start icon in the taskbar or hit the windows key.
-2. Type 'command prompt'
-3. Click "Run as Administrator"
+2. Type 'powershell'
+3. Click "Run as Administrator" on the right panel
 
 ```
 cd $OPENCOLA\windows
-start.bat
+./start
 ```
 
-You'll see a number of log lines and then a browser window will open to set a password.
-
-To install certificates so that you can use https:
+You should see output similar to:
 
 ```
-cd %USERPROFILE%\AppData\Roaming\opencola\storage\cert
-install-cert.bat
+Looks like Docker is installed in the default location
+OpenCola storage does not exist. Making a new one...
+No SSL certificate found
+Starting OpenCola with docker..
+[+] Building 0.6s (8/8) FINISHED
+ => [internal] load build definition from Dockerfile                                                               0.0s
+ => => transferring dockerfile: 32B                                                                                0.0s
+ => [internal] load .dockerignore                                                                                  0.0s
+ => => transferring context: 2B                                                                                    0.0s
+ => [internal] load metadata for docker.io/library/openjdk:17                                                      0.5s
+ => [1/3] FROM docker.io/library/openjdk:17@sha256:528707081fdb9562eb819128a9f85ae7fe000e2fbaeaf9f87662e7b3f38cb7  0.0s
+ => [internal] load build context                                                                                  0.0s
+ => => transferring context: 19.62kB                                                                               0.0s
+ => CACHED [2/3] COPY ./opencola/ /opencola                                                                        0.0s
+ => CACHED [3/3] WORKDIR /opencola/server                                                                          0.0s
+ => exporting to image                                                                                             0.0s
+ => => exporting layers                                                                                            0.0s
+ => => writing image sha256:44acfec9f4345aacc8f2ce58f9e69fbaa7c04611985f65549f86d989a1fab2b8                       0.0s
+ => => naming to docker.io/library/opencola-oc                                                                     0.0s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+[+] Running 2/2
+ - Network opencola_default  Created                                                                               0.7s
+ - Container opencola-oc-1   Started                                                                               1.3s
+Waiting for certificate creation
+New certificate found. Install? [y/n]:
+```
+If this is the first time you're starting OpenCola, a TLS certificate will have been generated so that you can use OpenCola over https. Enter 'y' to install the certificate (*This requires administrator access and will fail if not powershell as administrator*). 
+
+```
+ROOT "Trusted Root Certification Authorities"
+Signature matches Public Key
+Certificate "opencola" added to store.
+CertUtil: -addstore command completed successfully.
+Server Started
+
+Insecure URLs:
+http://172.20.112.1:5795
+http://192.168.50.204:5795
+http://127.0.0.1:5795
+
+Secure URLs:
+https://172.20.112.1:5796
+https://192.168.50.204:5796
+https://127.0.0.1:5796
+
+Waiting to launch browser...
+```
+
+In a few seconds, a browser will launch the OpenCola start page. 
+
+If certificate install failed (e.g. if you forgot to run powershell as Administrator), you can install the certificates manually by running powershell as Administrator and then:
+
+```
+cd $HOME\AppData\Roaming\opencola\storage\cert
+./install-cert
 ```
 
 </details>
