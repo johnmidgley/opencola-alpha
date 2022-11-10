@@ -454,3 +454,15 @@ The `login` values are the only things you're likely to want to change:
 | `password` | If you're not concerned with security and don't want to have to enter a password to start your server, you can uncomment this. If you do so, it's recommended to use a password you would never use anywhere else (a good practice in any situation). To change your password before setting this, simply start and stop your sever, then click "Change Password" on the startup page. |
 | `authenticationRequired` | If you're bothered by having to authenticate you browser, you can set this to `false`. You will still be prompted for user name and password occasionally, but you can simply cancel the dialog, and things will work fine|
 
+# Logging
+
+You can see what OpenCola logs by opening the Docker dashboard, expanding the opencola container and then opening the server:
+
+
+<img src="img/docker-server.png" width="800" />
+
+The logs will look something like:
+
+<img src="img/docker-logs.png" width="800" />
+
+Errors will be highlighted in red. If you file a bug report, please include logs, if possible.
