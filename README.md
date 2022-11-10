@@ -425,3 +425,32 @@ Note: if you don’t have this option, navigate to Advanced Settings > Security 
 1. Under Credential Use select VPN and Apps or Wi-Fi based on your security requirements.
 
 </details>
+
+# Server Configuration
+
+A few other configuration options are available in `~/.opencola/storage/opencola-server.yaml`. The default file is:
+
+```
+name: server
+
+server:
+  host: 0.0.0.0 # Bind to any local address
+  port: 5795
+  ssl:
+    port: 5796
+
+security:
+  login:
+    username: oc
+    # password: password # Set if you're ok with less security for convenience 
+    # authenticationRequired: false # Set if you're ok with less security for convenience
+```
+
+The `login` values are the only things you're likely to want to change:
+
+| Field | Description |
+| --- | --- |
+| `username` | This value is only used for web authentication. You can change this to any valid username (no spaces, etc.) |
+| `password` | If you're not concerned with security and don't want to have to enter a password to start your server, you can uncomment this. If you do so, it's recommended to use a password you would never use anywhere else (a good practice in any situation). To change your password before setting this, simply start and stop your sever, then click "Change Password" on the startup page. |
+| `authenticationRequired` | If you're bothered by having to authenticate you browser, you can set this to `false`. You will still be prompted for user name and password occasionally, but you can simply cancel the dialog, and things will work fine|
+
