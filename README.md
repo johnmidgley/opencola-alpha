@@ -319,7 +319,7 @@ You can see activty for the post as well as take action by using the action bar 
 
 You can search your feed by entering a query in the search box. Currently, search is exact match only, but will be improved in the future.
 
-# Adding Peers
+# Managing Peers
 
 To add a peer, click the <img src="img/peers.png" width="15" /> icon at the top right of your feed and then click the <img src="img/add-peer.png" width="15" /> icon.
 <img src="img/addPeer.png" width="800" />
@@ -327,8 +327,6 @@ To add a peer, click the <img src="img/peers.png" width="15" /> icon at the top 
 Copy the token beside "Give this token to your peer:" and give it to a peer (via Signal, email, sms, etc). Enter the token you receive from the peer in the other box. Click "Add" - edit the name a image url if desired, and then click "Save".
 
 By default you will be using the OpenCola Relay server (ocr://relay.opencola.net) to communicate with peers. Communication is end to end encrypted, but does travel through a central server. There are more advanced options (Tor, ZeroTier VPN) that will be documented, but are not for the faint of heart, so we default to the relay server as a "batteries included" solution.
-
-# Removing Peers
 
 You can "disconnect" from a peer without losing any of the posts your have accumulated by simply unchecking the box beside the <img src="img/refresh.png" width="15" /> icon for the peer. If you want to completely disconnect, edit the peer and click "Delete".
 
