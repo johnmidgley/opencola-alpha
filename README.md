@@ -286,7 +286,7 @@ If you would like to use the extension on a different computer than where the se
 
 </details>
 
-To use the extension, simply click the OpenCola icon in the toolbar:
+To use the extension, click the OpenCola icon in the toolbar:
 
 <img src="img/extensionToolbar.png" width="800" />
 
@@ -328,7 +328,7 @@ Copy the token beside "Give this token to your peer:" and give it to a peer (via
 
 By default you will be using the OpenCola Relay server (ocr://relay.opencola.net) to communicate with peers. Communication is end to end encrypted, but does travel through a central server. There are more advanced options (Tor, ZeroTier VPN) that will be documented, but are not for the faint of heart, so we default to the relay server as a "batteries included" solution.
 
-You can "disconnect" from a peer without losing any of the posts your have accumulated by simply unchecking the box beside the <img src="img/refresh.png" width="15" /> icon for the peer. If you want to completely disconnect, edit the peer and click "Delete".
+You can "disconnect" from a peer without losing any of the posts your have accumulated by unchecking the box beside the <img src="img/refresh.png" width="15" /> icon for the peer. If you want to completely disconnect, edit the peer and click "Delete".
 
 # OpenCola on Mobile
 
@@ -342,7 +342,7 @@ We currently have not built any services that allow you to access you OpenCola s
 <br/>
 In order to use ZeroTier, you must create an account, set up a network, and run the client on any devices that are running or would like to access OpenCola.
 
-To create an account, simply go to [ZeroTier](https://www.zerotier.com/) and sign up. Once signed, up, navigate to your [networks](https://my.zerotier.com/network), which should look something like:
+To create an account, go to [ZeroTier](https://www.zerotier.com/) and sign up. Once signed, up, navigate to your [networks](https://my.zerotier.com/network), which should look something like:
 <img src="img/zt-create-network.png" width="800" />
 
 Click "Create A Network". A network with a random name will be created, something like:
@@ -376,7 +376,7 @@ You'll notice new access urls that with a new ip address. You can use these addr
 
 # Installing Certificates
 
-The first time you start OpenCola, it will generate certificates so that you can access the application over https without security warnings. These certificates will be placed in ~/.opencola/storage/cert. If you ever need to generate new ones, simply delete the generated files (opencola-ssl*) and restart your server. This will create new certificates and prompt you to install on the local machine.
+The first time you start OpenCola, it will generate certificates so that you can access the application over https without security warnings. These certificates will be placed in ~/.opencola/storage/cert. If you ever need to generate new ones, delete the generated files (opencola-ssl*) and restart your server. This will create new certificates and prompt you to install on the local machine.
 
 For any other device, you will need to copy and add the certificates manually (in the future, with mobile apps, this won't be required). If you're not concerned about security (e.g. if you're on your local network or using ZeroTier), you can just use the http access links and skip the install steps below.
 
@@ -385,7 +385,7 @@ For any other device, you will need to copy and add the certificates manually (i
 <details><summary>Computer</summary>
 <br/>
 
-To access OpenCola over https from another computer, simply copy the `install-cert` (or `install-cert.ps1` on Windows) and `opencola-ssl.der` to the same directory on the computer and run:
+To access OpenCola over https from another computer, copy the `install-cert` (or `install-cert.ps1` on Windows) and `opencola-ssl.der` to the same directory on the computer and run:
 ```
 ./install-cert
 ```
@@ -449,8 +449,8 @@ The `login` values are the only things you're likely to want to change:
 | Field | Description |
 | --- | --- |
 | `username` | This value is only used for web authentication. You can change this to any valid username (no spaces, etc.) |
-| `password` | If you're not concerned with security and don't want to have to enter a password to start your server, you can uncomment this. If you do so, it's recommended to use a password you would never use anywhere else (a good practice in any situation). To change your password before setting this, simply start and stop your sever, then click "Change Password" on the startup page. |
-| `authenticationRequired` | If you're bothered by having to authenticate you browser, you can set this to `false`. You will still be prompted for user name and password occasionally, but you can simply cancel the dialog, and things will work fine|
+| `password` | If you're not concerned with security and don't want to have to enter a password to start your server, you can uncomment this. If you do so, it's recommended to use a password you would never use anywhere else (a good practice in any situation). To change your password before setting this,  stop and start your sever, then click "Change Password" on the startup page. |
+| `authenticationRequired` | If you're bothered by having to authenticate you browser, you can set this to `false`. You will still be prompted for user name and password occasionally, but you can just cancel the dialog, and things will work fine|
 
 # Logging
 
