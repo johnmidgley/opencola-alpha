@@ -225,7 +225,7 @@ Enter a password and confirm it.
 
 ## Logging in
 
-After setting your password, or whenever you start OpenCola thereafter, you will be prompted to enter a username and your password to continue. The user name is used for web authentication. It can be anything you like, but if you want to change it, you must set it in the config file (storage/opencola-server.yaml). Once your password is set, you'll be prompted to login to the app. Using the default username 'oc' the page looks like:
+After setting your password, or whenever you start OpenCola thereafter, you will be prompted to enter a username and your password to continue. The user name is used for web authentication. It can be anything you like, but if you want to change it, you must set it in the config file (see [Server Configuration](#server-configuration)). Once your password is set, you'll be prompted to login to the app. Using the default username 'oc' the page looks like:
 
 <img src="img/startApp.png" width="800" />
 
@@ -247,9 +247,9 @@ Fields:
 | <img src="img/peers.png" width="15" /> | Name visible to peers when you connect (more later) |
 | <img src="img/id.png" width="15" /> | Your gobally unique OpenCola user id - not changeable |
 | <img src="img/key.png" width="15" /> | A cryptogrpahic public key used to encrypt and sign data - not changeable yet |
-| <img src="img/link.png" width="15" /> | The address at which peers can request data from you. Default is to use the OpencCola relay server (see [Adding Peers](#adding-peers) for more details) |
+| <img src="img/link.png" width="15" /> | The address at which peers can request data from you. Default is to use the OpencCola relay server (see [Managing Peers](#managing-peers) for more details) |
 | <img src="img/photo.png" width="15" /> | Url of image for your picture. This has to be a web link right now. |
-| <img src="img/refresh.png" width="15" /> | Whether or not the user is actively being sychronized with (more later) |
+| <img src="img/refresh.png" width="15" /> | Whether or not the user is actively being sychronized (more later) |
 
 # The Browser Extenion
 
@@ -312,7 +312,7 @@ You can see activty for the post as well as take action by using the action bar 
 | Action | Description |
 | --- | --- |
 | <img src="img/save.png" width="20" /> | Save the post. This essentially copies the post and allows any of your peers to see it as if it came from you. |
-| <img src="img/like.png" width="20" /> | Like the post (save post implicitly) |
+| <img src="img/like.png" width="20" /> | Like the post (save post implicitly)  |
 | <img src="img/tag.png" width="20" /> | Add tags to the post |
 | <img src="img/comment.png" width="20" /> | Comment on the post (save post implicitly) |
 | <img src="img/edit.png" width="20" /> | Edit the post. Gives you an option to delete the post (if it was yours) |
@@ -324,7 +324,7 @@ You can search your feed by entering a query in the search box. Currently, searc
 To add a peer, click the <img src="img/peers.png" width="15" /> icon at the top right of your feed and then click the <img src="img/add-peer.png" width="15" /> icon.
 <img src="img/addPeer.png" width="800" />
 
-Copy the token beside "Give this token to your peer:" and give it to a peer (via Signal, email, sms, etc). Enter the token you receive from the peer in the other box. Click "Add" - edit the name a image url if desired, and then click "Save".
+Copy the token beside "Give this token to your peer:" and give it to a peer (via Signal, email, sms, etc). Enter the token you receive from the peer in the other box. Click "Add" - edit the name and image url if desired, and then click "Save".
 
 By default you will be using the OpenCola Relay server (ocr://relay.opencola.net) to communicate with peers. Communication is end to end encrypted, but does travel through a central server. There are more advanced options (Tor, ZeroTier VPN) that will be documented, but are not for the faint of heart, so we default to the relay server as a "batteries included" solution.
 
@@ -332,7 +332,7 @@ You can "disconnect" from a peer without losing any of the posts your have accum
 
 # OpenCola on Mobile
 
-We currently do not have native mobile apps. To access OpenCola on a mobile device, simply navigate to one of the (non-local) urls listed at startup (if you want to use https, see [Installing Certificate](#installing-certificates) below). This works when on the same LAN as your server. To access anywhere, see the next section.
+We currently do not have native mobile apps. To access OpenCola on a mobile device, simply navigate to one of the (non-local) urls listed at startup (if you want to use https, see [Installing Certificates](#installing-certificates) below). This works when on the same LAN as your server. To access anywhere, see the next section.
 
 # Accessing OpenCola from Anywhere
 
@@ -355,7 +355,7 @@ Take note of the network id (in this case, 632ea290854c7435). For each device yo
 - On Mac, click the ZeroTier icon in your menu bar, "Open Control Panel", and enter the network id in the box beside "Join Network" at the bottom.
 - On iOS, open the app, click + at the top right, Accept the terms and then enter the NetworkId
 
-Other OSs we haven't tried yet, but the process should be similar.
+Other OSs we haven't tried yet, but the process will be similar.
 
 Once your devices have been added, return to the network and scroll to the "Members" section and check the "Auth?" box beside the addresses you've added.
 
@@ -385,7 +385,7 @@ For any other device, you will need to copy and add the certificates manually (i
 <details><summary>Computer</summary>
 <br/>
 
-To access OpenCola over https from another computer, simply copy the `install-cert` (or `install-cert.ps1` on Windows) and `opencola-ssl.der` to the same directory on the computer and runs:
+To access OpenCola over https from another computer, simply copy the `install-cert` (or `install-cert.ps1` on Windows) and `opencola-ssl.der` to the same directory on the computer and run:
 ```
 ./install-cert
 ```
