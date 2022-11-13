@@ -5,7 +5,7 @@
 Welcome to the OpenCola alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. While a lot of the foundation is complete, we will continually be working on adding new features and making it easier to install / use. Some key things that we will be working on:
 
 1. **Sharing arbitrary files**: Currently, the things you share must be on the web (pages, PDFs, images). We will add functionality so that you can share content directly from your computer.
-2. **Personas**: All activity is associated to a single persona. We will add functionality so that you can have different personas (family, friends, work, etc.) so that you can segment you activity.
+2. **Personas**: All activity is associated to single idenity. We will add functionality so that you can have different personas (family, friends, work, etc.) so that you can segment you activity in intuitive ways.
 3. **Mobile Apps**: You can use OpenCola on mobile as a web app, but we intend to have native apps to make things easier to use.
 4. **Data Importers**: Since most people have a lot of content on existing sites, we will implement importers to make it easy to import activity into OpenCola.
 
