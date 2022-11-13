@@ -455,7 +455,7 @@ The `login` values are the only things you're likely to want to change:
 | --- | --- |
 | `username` | This value is only used for web authentication. You can change this to any valid username (no spaces, etc.) |
 | `password` | If you're not concerned with security and don't want to have to enter a password to start your server, you can uncomment this. If you do so, it's recommended to use a password you would never use anywhere else (a good practice in any situation). To change your password before setting this,  stop and start your sever, then click "Change Password" on the startup page. |
-| `authenticationRequired` | If you're bothered by having to authenticate you browser, you can set this to `false`. You will still be prompted for user name and password occasionally, but you can just cancel the dialog, and things will work fine|
+| `authenticationRequired` | If you're bothered by having to authenticate you browser, you can set this to `false`. You will still be prompted for user name and password occasionally, but you can just cancel the dialog, and things will work fine. |
 
 # Logging
 
