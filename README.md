@@ -34,6 +34,8 @@ OpenCola currently runs inside a docker container, which provides a few advantag
 </p>
 </details>
 
+>If you really want to run OpenCola outside of Docker, let us know and we can provide instructions - but you'll need to manually install the Java 11 runtime and manually start the OpenCola server startup.
+ 
 In order to make sure that OpenCola runs at startup / login, set docker to start when you log in:
 
 <img src="img/dockerSettings.png" width="800" />
