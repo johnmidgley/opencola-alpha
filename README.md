@@ -8,6 +8,7 @@ Welcome to the [OpenCola](https://opencola.io) alpha. We look forward to hearing
 2. **Personas**: All activity is associated to single idenity. We will add functionality so that you can have different personas (family, friends, work, etc.) so that you can segment you activity in intuitive ways.
 3. **Mobile Apps**: You can use OpenCola on mobile as a web app, but we intend to have native apps to make things easier to use.
 4. **Data Importers**: Since most people have a lot of content on existing sites, we will implement importers to make it easy to import activity into OpenCola.
+5. **Installers**: At this point, the install process is manual, require basic comfort with the command line. We will be creating more user friendly installers. 
 
 Feel free to add issues you come across to [issues](https://github.com/johnmidgley/opencola-alpha/issues) for this repo (preferred) or email dev@opencola.io. If you have questions, please use the [discussions](https://github.com/johnmidgley/opencola-alpha/discussions) area, so that others can benefit from the answers. 
 
