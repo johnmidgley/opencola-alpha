@@ -18,6 +18,8 @@ You're also welcome to share this alpha with friends, but we are limited on the 
 
 ## Prerequisites
 
+> NOTE: Some Windows machines don't have virtualization enabled, which is required by Docker, so you can install on Windows without Docker. If you prefer to do so, you can skip to [Install OpenCola](#install-opencola) - right now for Windows only. 
+
 <details><summary>Install Docker</summary>
  <br/>
 
@@ -35,7 +37,7 @@ OpenCola currently runs inside a docker container, which provides a few advantag
 </p>
 </details>
 
->If you really want to run OpenCola outside of Docker, let us know and we can provide instructions - but you'll need to manually install the Java 11 runtime and manually start the OpenCola server startup.
+> NOTE: If you really want to run OpenCola outside of Docker, let us know and we can provide instructions - but you'll need to manually install the Java 11 runtime and manually start the OpenCola server startup.
  
 In order to make sure that OpenCola runs at startup / login, set docker to start when you log in:
 
@@ -97,10 +99,14 @@ https://192.168.195.16:5796
 2. Type 'powershell'
 3. Click "Run as Administrator" on the right panel
 
+ In the terminal type:
+ 
+ > NOTE: If you want run without Docker, simply add a `-mode java` after the `./start` commend. 
+ 
 ```
 cd $OPENCOLA\windows
 ./start
-```
+``` 
 
  > **NOTE:** If this fails, it's likely because script execution is disabled. To enable script execution:
  > ```
@@ -111,7 +117,7 @@ cd $OPENCOLA\windows
  > Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Restricted -Force
  > ```
 
-You should see output similar to:
+You should see output similar to (if you're not using Docker, things will look a bit different, and you will likely be prompted to install java):
 
 ```
 Looks like Docker is installed in the default location
