@@ -173,12 +173,12 @@ Waiting to launch browser...
 
 In a few seconds, a browser will launch the OpenCola start page.
 
-If certificate install failed (e.g. if you forgot to run PowerShell as Administrator), you can install the certificates manually by running PowerShell as Administrator and then:
-
-```
-cd $HOME\AppData\Roaming\opencola\storage\cert
-./install-cert
-```
+> If you started with `-mode java` and would like to have OpenCola start when you log in, run:
+> ```
+> ./auto-start
+> ```
+>
+ 
 
 </details>
 <details><summary>Linux</summary>
