@@ -18,7 +18,7 @@ You're also welcome to share this alpha with friends, but we are limited on the 
 
 ## Prerequisites
 
-> NOTE: Some Windows machines don't have virtualization enabled, which is required by Docker, so you can install on Windows without Docker. If you prefer to do so, you can skip to [Install OpenCola](#install-opencola) - right now for Windows only. 
+> NOTE: Some Windows machines don't have virtualization enabled, which is required by Docker, so you can install on Windows without Docker. If you prefer to do so, you can skip to [Install OpenCola](#install-opencola) - right now for Windows only. We will have a general solution and a better install process soon.
 
 <details><summary>Install Docker</summary>
  <br/>
