@@ -29,7 +29,8 @@ In addition to installing the server, you will want to install the browser exten
 
 ## Device Certificates
 
-The first time you start OpenCola, it will generate certificates so that you can access the application over https without security warnings. These certificates will be placed in (~/.opencola/storage/cert. If you ever need to generate new ones, delete the generated files (opencola-ssl*) and restart your server. This will create new certificates and prompt you to install on the local machine.
+The first time you start OpenCola, it will generate certificates so that you can access the application over https without security warnings. These certificates will be placed in your storage/cert (in ~/Library/Application Support/OpenCola on Mac, $home\AppData\Local\OpenCola on Windows, or
+~/.opencola/storage/cert on Linux. If you ever need to generate new ones, delete the generated files (opencola-ssl*) and restart your server. This will create new certificates and prompt you to install on the local machine.
 
 For any other device, you will need to copy and add the certificates manually (in the future, with mobile apps, this won't be required). If you're not concerned about security (e.g. if you're on your local network or using ZeroTier), you can just use the http access links and skip the install steps below.
 
