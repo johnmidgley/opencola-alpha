@@ -2,7 +2,9 @@
 
 # Installing OpenCola on Windows
 
-1. <strong>Download</strong> the [Windows Installer](../../release/OpenCola-1.1.5.msi) 
+
+
+1. <strong>Download</strong> the [Windows Installer](https://github.com/johnmidgley/opencola-alpha/releases/download/1.1.5/OpenCola-1.1.5.msi) 
 
 Once downloaded, you may get the following warning:
 
