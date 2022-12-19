@@ -26,7 +26,7 @@ In order to make sure that OpenCola runs at startup / login, set docker to start
 
 ## Install OpenCola
 
-1. Download the [release](../../release/OpenCola-1.1.5.zip)
+1. Download the [release](https://github.com/johnmidgley/opencola-alpha/releases/download/1.1.5/OpenCola-1.1.5.zip)
 2. Unarchive it wherever you like (we'll call this location $OPENCOLA)
 
 ## Starting OpenCola
