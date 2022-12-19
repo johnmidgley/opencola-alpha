@@ -17,10 +17,10 @@ You're also welcome to share this alpha with friends, but we are limited on the 
   
 ## Server
 
-- [MacOS](docs/macOS/install.md)
-- [Windows](docs/windows/install.md)
-- [Linux](docs/linux/install.md)
-- [Docker Based](docs/docker/install.md)
+- [MacOS](https://github.com/johnmidgley/opencola-alpha/releases/download/1.1.5/OpenCola-1.1.5.dmg)
+- [Windows](https://github.com/johnmidgley/opencola-alpha/releases/download/1.1.5/OpenCola-1.1.5.msi)
+- [Linux](https://github.com/johnmidgley/opencola-alpha/releases/download/1.1.5/OpenCola-1.1.5.tgz)
+- [Docker Based](https://github.com/johnmidgley/opencola-alpha/releases/download/1.1.5/OpenCola-1.1.5.zip)
 
 ## Browser Extension
 
