@@ -1,6 +1,6 @@
 <img src="img/pull-tab.svg" width="100" />
 
-# opencola-alpha
+# opencola-alpha 1.1.6
 
 Welcome to the [OpenCola](https://opencola.io) alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. While a lot of the foundation is complete, we will continually be working on adding new features and making it easier to install / use. Some key things that we will be working on:
 
