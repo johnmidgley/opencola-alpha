@@ -68,7 +68,7 @@ To access OpenCola over https from another computer, copy the `install-cert` (or
 <details><summary>Android</summary>
 <br/>
 
-1. From ~/.opencola/storage/cert, copy `opencola-ssl.der` to `opencola-ssl.crt` and then trandfer it to your device. The simplest way to do this is just to mail it to your device as an attachment and then save it to your local files.
+1. From ~/.opencola/storage/cert, copy `opencola-ssl.der` to `opencola-ssl.crt` and then transfer it to your device. The simplest way to do this is just to mail it to your device as an attachment and then save it to your local files.
 1. On your Android admin dashboard go to Settings > Security
 1. Under Credential Storage click on Install from Phone Storage/Install from SD Card
 Note: if you don’t have this option, navigate to Advanced Settings > Security or Advanced Settings > Privacy and click on Install from Phone Storage/Install from SD Card.
@@ -90,7 +90,7 @@ You can add items to your feed by using the toolbar or creating organic (not tie
 
 <img src="img/annotated-post.png" width="800" />
 
-You can see activty for the post as well as take action by using the action bar at the bottom. If you click the action icon, the corresponding action will be taken. Underlined (with a grey bar) action icons indicate actions that you have taken yourself. The number beside the icon indicates how many actions of that type have occured. You can see the individual actions by clicking expand (<img src="img/show.png" width="15" />) icon.
+You can see activity for the post as well as take action by using the action bar at the bottom. If you click the action icon, the corresponding action will be taken. Underlined (with a grey bar) action icons indicate actions that you have taken yourself. The number beside the icon indicates how many actions of that type have occured. You can see the individual actions by clicking expand (<img src="img/show.png" width="15" />) icon.
 
 | Action | Description |
 | --- | --- |
