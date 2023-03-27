@@ -5,9 +5,8 @@
 Welcome to the [OpenCola](https://opencola.io) alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. While a lot of the foundation is complete, we will continually be working on adding new features and making it easier to install / use. Some key things that we will be working on:
 
 1. **Sharing arbitrary files**: Currently, the things you share must be on the web (pages, PDFs, images). We will add functionality so that you can share content directly from your computer.
-2. **Personas**: All activity is associated to single idenity. We will add functionality so that you can have different personas (family, friends, work, etc.) so that you can segment you activity in intuitive ways.
-3. **Mobile Apps**: You can use OpenCola on mobile as a web app, but we intend to have native apps to make things easier to use.
-4. **Data Importers**: Since most people have a lot of content on existing sites, we will implement importers to make it easy to import activity into OpenCola.
+2. **Mobile Apps**: You can use OpenCola on mobile as a web app, but we intend to have native apps to make things easier to use.
+3. **Data Importers**: Since most people have a lot of content on existing sites, we will implement importers to make it easy to import activity into OpenCola.
 
 Feel free to add issues you come across to [issues](https://github.com/johnmidgley/opencola-alpha/issues) for this repo (preferred) or email dev@opencola.io. If you have questions, please use the [discussions](https://github.com/johnmidgley/opencola-alpha/discussions) area, so that others can benefit from the answers. 
 
@@ -114,7 +113,7 @@ The various icons mean:
 | --- | --- |
 | <img src="img/green-light-icon.png" width="25" /> | Staus of the extension. Green means all good, yellow means working, and red means error. Check the Javascript console for more info on error. |
 | <img src="img/save.png" width="25" /> | Save the current page (Add to feed, store archive, and index for search) |
-| <img src="img/like.png" width="25" /> | Like the current page (saves page implicitly |
+| <img src="img/like.png" width="25" /> | Like the current page (saves page implicitly) |
 | <img src="img/trust.png" width="25" /> | Trust the current page (saves page implicitly) |
 | <img src="img/search.png" width="25" /> | Go to search / feed page |
 

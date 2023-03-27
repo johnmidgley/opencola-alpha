@@ -3,7 +3,7 @@
 # Setting Up
 
 After starting OpenCola and installing certificates, you will see:
-<img src="img/new-user.png" />
+<img src="img/new-user.png" width="800"/>
 Enter any username you want (it is only seen by you and used to log in), a password and confirm it. 
 
 <p> <strong>*** Save this password somewhere safe. If you lose it, you can reocover your data, but your identity will be
@@ -19,12 +19,12 @@ lost and you will have to reconnect with any peers ***</strong> </p>
 
 Click <strong>Start</strong>, after which you will see:
 
-<img src="img/carbonating.png" />
+<img src="img/carbonating.png" width="800"/>
 
 The server will take a few seconds to create and initialize your storage, after which you will end up on your feed:
-<img src="img/initial-feed.png" />
+<img src="img/initial-feed.png" width="800" />
 
-You can set a display name and image for yourself in peer settings by clicking the <img src="img/peers.png" width="15" />. This view shows you, along with any peers your have (connecting to others will be described later). To edit fields, click <strong>Edit</strong> 
+You can set a display name and image for yourself by clicking the persona selector and selecting manage. This view shows you all the personas you have created. To edit fields, click <strong>Edit</strong>. To add a new persona, click the <img src="../img/add-peer.png" width="15" /> icon.
 
 <img src="img/set-info.png" width="800" />
 
@@ -32,7 +32,7 @@ The fields for each entry are
 
 | Field | Description |
 | --- | --- |
-| <img src="../img/peers.png" width="15" /> | Name visible to peers when you connect (more later) |
+| <img src="img/user.png" width="15" /> | Name visible to peers when you connect (more later) |
 | <img src="img/id.png" width="15" /> | Your gobally unique OpenCola user id - not changeable |
 | <img src="img/key.png" width="15" /> | A cryptogrpahic public key used to encrypt and sign data - not changeable yet |
 | <img src="img/link.png" width="15" /> | The address at which peers can request data from you. Default is to use the OpencCola relay server (see [Managing Peers](#managing-peers) for more details) |
