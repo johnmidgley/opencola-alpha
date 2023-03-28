@@ -47,7 +47,7 @@ In addition to installing the server, you will want to install the browser exten
 
 After starting OpenCola and installing certificates, you will see:
 <img src="docs/img/new-user.png" width="800"/>
-Enter any username you want (it is only seen by you and used to log in), a password and confirm it. 
+Enter a password and confirm it. 
 
 <p> <strong>*** Save this password somewhere safe. If you lose it, you can reocover your data, but your identity will be
 lost and you will have to reconnect with any peers ***</strong> </p>
@@ -121,13 +121,15 @@ The various icons mean:
 | <img src="img/trust.png" width="25" /> | Trust the current page (saves page implicitly) |
 | <img src="img/search.png" width="25" /> | Go to search / feed page |
 
+Use the Persona selector to choose where you want to save your item (see next section on Personas)
+
 # Personas
 
 Personas give you ways to organize your conversations with Peers. Each persona can have a unique set of Peers to connect with. It's like having separate identities you can share with people for different purposes.
 
 The main Persona selector can be found at the top of most pages of OpenCola. Use it to quickly switch between your feeds and peers. This is how you tell which Persona is currently active. 
 
-There's also a Persona selector in the action bar below each post. This one lets you quickly take action as a Persona when you save, comment, tag, etc. It's most useful for transferring posts between Personas. If you wanted to save a post from your Work persona to your Crochet Clan persona you would just find the post, choose "Crochet Clan" in the selector and click the "Save" icon.
+On your feed when "All" personas is selected, there's also a Persona selector in the action bar below each post. This one lets you quickly take action as a Persona when you save, comment, tag, etc. It's most useful for transferring posts between Personas. If you wanted to save a post from your Work persona to your Crochet Clan persona you would just find the post, choose "Crochet Clan" in the selector and click the "Save" icon.
 
 <img src="img/persona-selector.png" width="800" />
 
@@ -137,10 +139,11 @@ You can use the "+" icon at the top right of the page to add a persona or choose
 
 <img src="docs/img/set-info.png" width="800">
 
-Each <strong>Persona</strong> has it's own set of <strong>Peers</strong>. To start adding people to your Personas network just use the Persona selector at the top of the page and navigate to your <strong>Peers</strong> with <img src="img/peers.png" width="25">
+Each Persona has it's own set of <strong>Peers</strong>. To start adding people to your Personas network just use the Persona selector at the top of the page and navigate to your <strong>Peers</strong> with <img src="img/peers.png" width="15">
 
 <img src="img/manage-peers-arrow.png" width="800">
 
+If you would like to have a private Persona, for taking notes, etc., simply uncheck the sync option <img src="img/refresh.png" width="15" /> for the persona. This will ensure that no data is sent / received to any peer for this persona. 
 
 # Managing Peers
 
