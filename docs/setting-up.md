@@ -4,7 +4,7 @@
 
 After starting OpenCola and installing certificates, you will see:
 <img src="img/new-user.png" width="800"/>
-Enter any username you want (it is only seen by you and used to log in), a password and confirm it. 
+Enter a password and confirm it. 
 
 <p> <strong>*** Save this password somewhere safe. If you lose it, you can reocover your data, but your identity will be
 lost and you will have to reconnect with any peers ***</strong> </p>
