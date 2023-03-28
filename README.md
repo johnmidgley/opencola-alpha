@@ -1,6 +1,8 @@
 <img src="img/pull-tab.svg" width="100" />
 
-# opencola-alpha 1.1.6
+# opencola-alpha 1.2.0
+
+_updated 3/27/2023_
 
 Welcome to the [OpenCola](https://opencola.io) alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. While a lot of the foundation is complete, we will continually be working on adding new features and making it easier to install / use. Some key things that we will be working on:
 
@@ -12,8 +14,19 @@ Feel free to add issues you come across to [issues](https://github.com/johnmidgl
 
 You're also welcome to share this alpha with friends, but we are limited on the amount of support we can provide, so we will prioritize those on the alpha list.
 
+# New in version 1.2.0
+
+**Personas** 
+
+You can now create and use different Personas when you connect and share. Personas let you have separate feeds and sets of peers so you don't have to share everything with everyone you're connected to. Each persona has it's own identity and sharing token so you can establish completely separate identities (or personas) for different situations.
+
+**Experience updates and bugfixes**
+- Removed username from keystore password entry screen at startup
+- Various stability and quality fixes
+
 # Installation
-  
+OpenCola runs a small server on your computer. You use OpenCola through a your web browser just like a web app or service except you're connecting to the OpenCola server software on your machine.
+
 ## Server
 
 - [MacOS](docs/macOS/install.md)
@@ -21,12 +34,127 @@ You're also welcome to share this alpha with friends, but we are limited on the 
 - [Linux](docs/linux/install.md)
 - [Docker Based](docs/docker/install.md)
 
+
+
 ## Browser Extension
 
 In addition to installing the server, you will want to install the browser extension:
 - [Chrome Extension](docs/chrome-extension.md)
 
-## Device Certificates
+
+# Setting Up
+[](#setting-up)
+
+After starting OpenCola and installing certificates, you will see:
+<img src="docs/img/new-user.png" width="800"/>
+Enter any username you want (it is only seen by you and used to log in), a password and confirm it. 
+
+<p> <strong>*** Save this password somewhere safe. If you lose it, you can reocover your data, but your identity will be
+lost and you will have to reconnect with any peers ***</strong> </p>
+
+>Leave <strong>Auto-Start</strong> checked to have OpenCola start when you log in, so that you can exchange posts with peers in the background. 
+>
+> On MacOS, setting autostart will trigger a security dialog, asking for permission to control <strong>System Events</strong>. Click <strong>OK</strong> to allow OpenCola to auto-start.
+>
+> <img src="docs/img/allow-system-events.png" width="372" />
+>
+> On Linux, autostart assumes a gnome based environment, and will add a file to ```~/.config/autostart```
+
+Click <strong>Start</strong>, after which you will see:
+
+<img src="docs/img/carbonating.png" width="800"/>
+
+The server will take a few seconds to create and initialize your storage, after which you will end up on your feed:
+<img src="docs/img/initial-feed.png" width="800" />
+
+You can set a display name and image for yourself by clicking the persona selector and selecting manage. This view shows you all the personas you have created. To edit fields, click <strong>Edit</strong>. To add a new persona, click the <img src="img/add-peer.png" width="15" /> icon.
+
+<img src="docs/img/set-info.png" width="800" />
+
+The fields for each entry are:
+
+| Field | Description |
+| --- | --- |
+| <img src="docs/img/user.png" width="15" /> | Name visible to peers when you connect (more later) |
+| <img src="docs/img/id.png" width="15" /> | Your gobally unique OpenCola user id - not changeable |
+| <img src="docs/img/key.png" width="15" /> | A cryptogrpahic public key used to encrypt and sign data - not changeable yet |
+| <img src="docs/img/link.png" width="15" /> | The address at which peers can request data from you. Default is to use the OpencCola relay server (see [Managing Peers](#managing-peers) for more details) |
+| <img src="docs/img/photo.png" width="15" /> | Url of image for your picture. This has to be a web link right now. |
+| <img src="img/refresh.png" width="15" /> | Whether or not the user is actively being sychronized (more later) |
+
+
+# Understanding Your Feed
+
+You can add items to your feed by using the toolbar or creating organic (not tied to a url) posts using the <img src="img/new-post.png" width="15" /> button at the top right of the feed page.
+
+> TIP: When you create an item using the <img src="img/new-post.png" width="15" /> button, if the only thing you enter is a link in the description field, it will automatically extract the title, image and description from the page, similar to how the toobar saves pages. This is especially useful on mobile, where there isn't a toolbar.
+
+ Once you've added to your feed, it will look something like (annotations in red):
+
+<img src="img/annotated-post.png" width="800" />
+
+You can see activity for the post as well as take action by using the action bar at the bottom. If you click the action icon, the corresponding action will be taken. Underlined (with a grey bar) action icons indicate actions that you have taken yourself. The number beside the icon indicates how many actions of that type have occured. You can see the individual actions by clicking expand (<img src="img/show.png" width="15" />) icon.
+
+| Action | Description |
+| --- | --- |
+| <img src="img/save.png" width="20" /> | Save the post. This essentially copies the post and allows any of your peers to see it as if it came from you. |
+| <img src="img/like.png" width="20" /> | Like the post (save post implicitly)  |
+| <img src="img/tag.png" width="20" /> | Add tags to the post |
+| <img src="img/comment.png" width="20" /> | Comment on the post (save post implicitly) |
+| <img src="img/edit.png" width="20" /> | Edit the post. Gives you an option to delete the post (if it was yours) |
+
+You can search your feed by entering a query in the search box. Currently, search is exact match only, but will be improved in the future.
+
+# Using the Extension
+
+To use the extension, click the OpenCola icon in the toolbar:
+
+<img src="img/extensionToolbar.png" width="800" />
+
+The various icons mean:
+
+| Icon | Description |
+| --- | --- |
+| <img src="img/green-light-icon.png" width="25" /> | Staus of the extension. Green means all good, yellow means working, and red means error. Check the Javascript console for more info on error. |
+| <img src="img/save.png" width="25" /> | Save the current page (Add to feed, store archive, and index for search) |
+| <img src="img/like.png" width="25" /> | Like the current page (saves page implicitly) |
+| <img src="img/trust.png" width="25" /> | Trust the current page (saves page implicitly) |
+| <img src="img/search.png" width="25" /> | Go to search / feed page |
+
+# Personas
+
+Personas give you ways to organize your conversations with Peers. Each persona can have a unique set of Peers to connect with. It's like having separate identities you can share with people for different purposes.
+
+The main Persona selector can be found at the top of most pages of OpenCola. Use it to quickly switch between your feeds and peers. This is how you tell which Persona is currently active. 
+
+There's also a Persona selector in the action bar below each post. This one lets you quickly take action as a Persona when you save, comment, tag, etc. It's most useful for transferring posts between Personas. If you wanted to save a post from your Work persona to your Crochet Clan persona you would just find the post, choose "Crochet Clan" in the selector and click the "Save" icon.
+
+<img src="img/persona-selector.png" width="800" />
+
+To add or edit a persona use the the Persona selector and choose <strong>Manage</strong>. This will take you to the Persona page. 
+
+You can use the "+" icon at the top right of the page to add a persona or choose <strong>Edit</strong> below any of your personas to change details.
+
+<img src="docs/img/set-info.png" width="800">
+
+Each <strong>Persona</strong> has it's own set of <strong>Peers</strong>. To start adding people to your Personas network just use the Persona selector at the top of the page and navigate to your <strong>Peers</strong> with <img src="img/peers.png" width="25">
+
+<img src="img/manage-peers-arrow.png" width="800">
+
+
+# Managing Peers
+
+To add a peer, click the <img src="img/peers.png" width="15" /> icon at the top right of your feed and then click the <img src="img/add-peer.png" width="15" /> icon.
+<img src="img/adding-peer.png" width="800" />
+
+Copy the token beside "Give this token to your peer:" and give it to a peer (via Signal, email, sms, etc). Enter the token you receive from the peer in the other box. Click "Add" - edit the name and image url if desired, and then click "Save". You don't need to keep your browser open while waiting for a token from your peer - you can whenever you get the token.
+
+By default you will be using the OpenCola Relay server (ocr://relay.opencola.net) to communicate with peers. Communication is end to end encrypted, but does travel through a central server. There are more advanced options (Tor, ZeroTier VPN) that will be documented, but are not for the faint of heart, so we default to the relay server as a "batteries included" solution.
+
+You can "disconnect" from a peer without losing any of the posts your have accumulated by unchecking the box beside the <img src="img/refresh.png" width="15" /> icon for the peer. If you want to completely disconnect, edit the peer and click "Delete".
+
+
+# Device Certificates
 
 The first time you start OpenCola, it will generate certificates so that you can access the application over https without security warnings. These certificates will be placed in your storage/cert (in ~/Library/Application Support/OpenCola on Mac, $home\AppData\Local\OpenCola on Windows, or
 ~/.opencola/storage/cert on Linux). If you ever need to generate new ones, delete the generated files (opencola-ssl*) and restart your server. This will create new certificates and prompt you to install on the local machine.
@@ -77,57 +205,6 @@ Note: if you don’t have this option, navigate to Advanced Settings > Security 
 
 </details>
 
-
-
-# Understanding Your Feed
-
-You can add items to your feed by using the toolbar or creating organic (not tied to a url) posts using the <img src="img/new-post.png" width="15" /> button at the top right of the feed page.
-
-> TIP: When you create an item using the <img src="img/new-post.png" width="15" /> button, if the only thing you enter is a link in the description field, it will automatically extract the title, image and description from the page, similar to how the toobar saves pages. This is especially useful on mobile, where there isn't a toolbar.
-
- Once you've added to your feed, it will look something like (annotations in red):
-
-<img src="img/annotated-post.png" width="800" />
-
-You can see activity for the post as well as take action by using the action bar at the bottom. If you click the action icon, the corresponding action will be taken. Underlined (with a grey bar) action icons indicate actions that you have taken yourself. The number beside the icon indicates how many actions of that type have occured. You can see the individual actions by clicking expand (<img src="img/show.png" width="15" />) icon.
-
-| Action | Description |
-| --- | --- |
-| <img src="img/save.png" width="20" /> | Save the post. This essentially copies the post and allows any of your peers to see it as if it came from you. |
-| <img src="img/like.png" width="20" /> | Like the post (save post implicitly)  |
-| <img src="img/tag.png" width="20" /> | Add tags to the post |
-| <img src="img/comment.png" width="20" /> | Comment on the post (save post implicitly) |
-| <img src="img/edit.png" width="20" /> | Edit the post. Gives you an option to delete the post (if it was yours) |
-
-You can search your feed by entering a query in the search box. Currently, search is exact match only, but will be improved in the future.
-
-# Using the Extension
-
-To use the extension, click the OpenCola icon in the toolbar:
-
-<img src="img/extensionToolbar.png" width="800" />
-
-The various icons mean:
-
-| Icon | Description |
-| --- | --- |
-| <img src="img/green-light-icon.png" width="25" /> | Staus of the extension. Green means all good, yellow means working, and red means error. Check the Javascript console for more info on error. |
-| <img src="img/save.png" width="25" /> | Save the current page (Add to feed, store archive, and index for search) |
-| <img src="img/like.png" width="25" /> | Like the current page (saves page implicitly) |
-| <img src="img/trust.png" width="25" /> | Trust the current page (saves page implicitly) |
-| <img src="img/search.png" width="25" /> | Go to search / feed page |
-
-
-# Managing Peers
-
-To add a peer, click the <img src="img/peers.png" width="15" /> icon at the top right of your feed and then click the <img src="img/add-peer.png" width="15" /> icon.
-<img src="img/adding-peer.png" width="800" />
-
-Copy the token beside "Give this token to your peer:" and give it to a peer (via Signal, email, sms, etc). Enter the token you receive from the peer in the other box. Click "Add" - edit the name and image url if desired, and then click "Save". You don't need to keep your browser open while waiting for a token from your peer - you can whenever you get the token.
-
-By default you will be using the OpenCola Relay server (ocr://relay.opencola.net) to communicate with peers. Communication is end to end encrypted, but does travel through a central server. There are more advanced options (Tor, ZeroTier VPN) that will be documented, but are not for the faint of heart, so we default to the relay server as a "batteries included" solution.
-
-You can "disconnect" from a peer without losing any of the posts your have accumulated by unchecking the box beside the <img src="img/refresh.png" width="15" /> icon for the peer. If you want to completely disconnect, edit the peer and click "Delete".
 
 # OpenCola on Mobile
 

@@ -34,4 +34,4 @@ If so, click <strong>See more</strong>, expand <strong>Show more</strong> and cl
 > Get-Content $home/logs/opencola/opencola-server.log -Tail 20 -Wait
 > ```
 
-Next: [Setting Up](../setting-up.md)
+Back to: [Setting Up](../../README.md#setting-up)

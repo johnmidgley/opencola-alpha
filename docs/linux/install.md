@@ -19,4 +19,4 @@
 > tail -f ~/logs/opencola/opencola-server.log
 > ```
 
-Next: [Setting Up](../setting-up.md)
+Back to: [Setting Up](../../README.md#setting-up)

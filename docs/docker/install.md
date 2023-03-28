@@ -187,4 +187,4 @@ Once you've followed the instructions for you OS, navigate to https://localhost:
 > <img src="img/docker-logs.png" width="800" />
 > Errors will be highlighted in red.
 
-Next: [Setting Up](../setting-up.md)
+Back to: [Setting Up](../../README.md#setting-up)
