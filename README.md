@@ -2,7 +2,7 @@
 
 # opencola-alpha 1.2.0
 
-_updated 3/27/2023_
+_updated 3/28/2023_
 
 Welcome to the [OpenCola](https://opencola.io) alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. While a lot of the foundation is complete, we will continually be working on adding new features and making it easier to install / use. Some key things that we will be working on:
 
@@ -23,6 +23,8 @@ You can now create and use different Personas when you connect and share. Person
 **Experience updates and bugfixes**
 - Removed username from keystore password entry screen at startup
 - Various stability and quality fixes
+
+_If you're upgrading from an earlier version_ - you will need to re-install the Chrome extension. See below for instructions.
 
 # Installation
 OpenCola runs a small server on your computer. You use OpenCola through a your web browser just like a web app or service except you're connecting to the OpenCola server software on your machine.
