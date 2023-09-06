@@ -1,6 +1,6 @@
 <img src="img/pull-tab.svg" width="100" />
 
-# opencola-alpha 1.2.0
+# opencola-alpha 1.3.1
 
 _updated 9/06/2023_
 
@@ -33,13 +33,13 @@ You can now added arbitrary file attachments to posts, allowing you to share pdf
 
 The original storage serialization formats were custom for maximum size efficiency. These formats have now been moved to protobuf, improving future interoperability and extendability.
 
-> NOTE: Since the transaction data format has changed, your transaction chain needs to be re-generated and re-signed. When you start OpenCola, your data will be automatically migrated. You will temporarily lose access to your peer data, because it is incompatible with the new format. Once your peers upgrade, their data will automatically re-synchronize. 
+> NOTE if you're upgrading: Since the transaction data format has changed, your transaction chain needs to be re-generated and re-signed. When you start OpenCola, your data will be automatically migrated. You will temporarily lose access to your peer data, because it is incompatible with the new format. Once your peers upgrade, their data will automatically re-synchronize. 
 
 ## Re-write of Relay Server Protocol
 
 The new relay server protocol use protobuf messages, includes a number of efficiency improvements, and now supports store and forward functionality, so that you can receive peer updates even when they are not online
 
-## Older
+## New in Older Versions
 [New in version 1.2.0](1.2.0-release-notes.md)
 
 # Installation
@@ -118,6 +118,7 @@ You can see activity for the post as well as take action by using the action bar
 | <img src="img/save.png" width="20" /> | Save the post. This essentially copies the post and allows any of your peers to see it as if it came from you. |
 | <img src="img/like.png" width="20" /> | Like the post (save post implicitly)  |
 | <img src="img/tag.png" width="20" /> | Add tags to the post |
+| <img src="img/attach.png" width="20" /> | Attach files to the post. These files will be propagated to peers. If images are attached, they are rendered as part of the post body. Other file types are rendered as links. |
 | <img src="img/comment.png" width="20" /> | Comment on the post (save post implicitly) |
 | <img src="img/edit.png" width="20" /> | Edit the post. Gives you an option to delete the post (if it was yours) |
 
@@ -159,7 +160,7 @@ You can use the "+" icon at the top right of the page to add a persona or choose
 
 Each Persona has it's own set of <strong>Peers</strong>. To start adding people to your Personas network just use the Persona selector at the top of the page and navigate to your <strong>Peers</strong> with <img src="img/peers.png" width="15">
 
-<img src="img/manage-peers-arrow.png" width="800">
+<img src="img/mangae-peers-arrow.png" width="800">
 
 If you would like to have a private Persona, for taking notes, etc., simply uncheck the sync option <img src="img/refresh.png" width="15" /> for the persona. This will ensure that no data is sent / received to any peer for this persona. 
 
