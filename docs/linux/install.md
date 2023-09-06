@@ -2,7 +2,7 @@
 
 # Installing OpenCola on Linux
 
-1. <strong>Download</strong> the [Linux Release](https://github.com/johnmidgley/opencola-alpha/releases/download/1.3.1/OpenCola-Linux-1.3.1.tgz)
+1. <strong>Download</strong> the [Linux Release](https://github.com/johnmidgley/opencola-alpha/releases/download/v1.3.1/OpenCola-Linux-1.3.1.tgz)
 2. In a terminal, untar it wherever you like:
 ```
 > tar -xzf OpenCola-Linux-1.3.1.tgz
