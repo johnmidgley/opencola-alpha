@@ -2,7 +2,7 @@
 
 OpenCola has a browser extension that makes it easier to interact with web pages. It currenlty only works with Chrome based browsers (e.g. Chrome, Chromium, Brave, Edge). We will provide other extnsions in the future. As well, the extension is a manual install and we will provide the extension in the Web Store in a future release.
 
-To start,  <a href="https://github.com/johnmidgley/opencola-alpha/releases/download/1.3.1/OpenCola-Chrome-1.3.1.zip">download the extension</a> and place it in your home direcory (or anywhere you prefer). Then go to your browsers extensions page, by clicking the menu icon on the far right of the url bar (the icon with 3 horizontal lines or 3 dots), and selecting extensions:
+To start,  <a href="https://github.com/johnmidgley/opencola-alpha/releases/download/v1.3.1/OpenCola-Chrome-1.3.1.zip">download the extension</a> and place it in your home direcory (or anywhere you prefer). Then go to your browsers extensions page, by clicking the menu icon on the far right of the url bar (the icon with 3 horizontal lines or 3 dots), and selecting extensions:
 
 <img src="img/chrome-customize-menu.png" width="372" />
 
