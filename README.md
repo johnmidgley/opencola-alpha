@@ -2,29 +2,45 @@
 
 # opencola-alpha 1.2.0
 
-_updated 3/28/2023_
+_updated 9/06/2023_
 
 Welcome to the [OpenCola](https://opencola.io) alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. While a lot of the foundation is complete, we will continually be working on adding new features and making it easier to install / use. Some key things that we will be working on:
 
-1. **Sharing arbitrary files**: Currently, the things you share must be on the web (pages, PDFs, images). We will add functionality so that you can share content directly from your computer.
-2. **Mobile Apps**: You can use OpenCola on mobile as a web app, but we intend to have native apps to make things easier to use.
+1. **Mobile Apps**: We are currently working on a mobile app in Flutter that will support both iOS and Android devices. 
+2. **UI Design**: The current UI desing is intentionally mininmalistic, meant to show the overall functionality in a simple way. We will work with an actual designer to develop a proper "feel" to the application.   
 3. **Data Importers**: Since most people have a lot of content on existing sites, we will implement importers to make it easy to import activity into OpenCola.
 
 Feel free to add issues you come across to [issues](https://github.com/johnmidgley/opencola-alpha/issues) for this repo (preferred) or email dev@opencola.io. If you have questions, please use the [discussions](https://github.com/johnmidgley/opencola-alpha/discussions) area, so that others can benefit from the answers. 
 
 You're also welcome to share this alpha with friends, but we are limited on the amount of support we can provide, so we will prioritize those on the alpha list.
 
-# New in version 1.2.0
+# New in version 1.3.1
 
-**Personas** 
+This release brings some important features and imrpovements as well as a number of minor bug fixes.
 
-You can now create and use different Personas when you connect and share. Personas let you have separate feeds and sets of peers so you don't have to share everything with everyone you're connected to. Each persona has it's own identity and sharing token so you can establish completely separate identities (or personas) for different situations.
 
-**Experience updates and bugfixes**
-- Removed username from keystore password entry screen at startup
-- Various stability and quality fixes
+## File attachments
 
-_If you're upgrading from an earlier version_ - you will need to re-install the Chrome extension. See below for instructions.
+You can now added arbitrary file attachments to posts, allowing you to share pdf documents, images and more.
+
+## Cleaned up UI
+
+* Image treatment is now more promininet, giving your feed a more traditional feed look. 
+* Creating / editing posts has been simplified
+* Comments are now done in a markdown wysiwyg editor.  
+
+## Standardized Serialization 
+
+The original storage serialization formats were custom for maximum size efficiency. These formats have now been moved to protobuf, improving future interoperability and extendability.
+
+> NOTE: Since the transaction data format has changed, your transaction chain needs to be re-generated and re-signed. When you start OpenCola, your data will be automatically migrated. You will temporarily lose access to your peer data, because it is incompatible with the new format. Once your peers upgrade, their data will automatically re-synchronize. 
+
+## Re-write of Relay Server Protocol
+
+The new relay server protocol use protobuf messages, includes a number of efficiency improvements, and now supports store and forward functionality, so that you can receive peer updates even when they are not online
+
+## Older
+[New in version 1.2.0](1.2.0-release-notes.md)
 
 # Installation
 OpenCola runs a small server on your computer. You use OpenCola through a your web browser just like a web app or service except you're connecting to the OpenCola server software on your machine.
