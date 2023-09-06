@@ -4,7 +4,7 @@
 
 
 
-1. <strong>Download</strong> the [Windows Installer](https://github.com/johnmidgley/opencola-alpha/releases/download/1.3.1/OpenCola-Windows-1.3.1.msi) 
+1. <strong>Download</strong> the [Windows Installer](https://github.com/johnmidgley/opencola-alpha/releases/download/v1.3.1/OpenCola-Windows-1.3.1.msi) 
 
 Once downloaded, you may get the following warning:
 
