@@ -1,8 +1,8 @@
 <img src="img/pull-tab.svg" width="100" />
 
-# opencola-alpha 1.3.1
+# opencola-alpha 1.3.2
+_updated 9/15/2023_
 
-_updated 9/06/2023_
 
 Welcome to the [OpenCola](https://opencola.io) alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. While a lot of the foundation is complete, we will continually be working on adding new features and making it easier to install / use. Some key things that we will be working on:
 
@@ -13,6 +13,11 @@ Welcome to the [OpenCola](https://opencola.io) alpha. We look forward to hearing
 Feel free to add issues you come across to [issues](https://github.com/johnmidgley/opencola-alpha/issues) for this repo (preferred) or email dev@opencola.io. If you have questions, please use the [discussions](https://github.com/johnmidgley/opencola-alpha/discussions) area, so that others can benefit from the answers. 
 
 You're also welcome to share this alpha with friends, but we are limited on the amount of support we can provide, so we will prioritize those on the alpha list.
+
+
+# New in version 1.3.2
+
+Fixed issues with display of attachments
 
 # New in version 1.3.1
 
