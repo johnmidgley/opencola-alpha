@@ -20,7 +20,7 @@ You're also welcome to share this alpha with friends, but we are limited on the 
 * Cleaned up setup and login UI
 * Embedded help into application
 * Added instruction on empty pages
-* Embeded Chrome Extension in app
+* Embeded Chrome Extension into application
 
 # New in version 1.3.2
 
@@ -66,5 +66,5 @@ OpenCola runs a small server on your computer. You use OpenCola through a your w
 
 # Setting Up
 
-Setup instruction are now inside the application iteself. Just start the application and follow the instructions.
+Setup instruction are now inside the application iteself. Just start the application and follow the instructions. Help on how to use OpenCola can also be found inside the application itself. 
 
