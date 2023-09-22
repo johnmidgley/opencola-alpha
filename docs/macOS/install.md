@@ -17,9 +17,11 @@
 6. Since the DMG is signed, but not notarized (we'll do this next release), you won't be able to directly open it the first time. Click <strong>Show in Finder</strong>
 <img src="img/cannot-be-opened.png" width="372" />
 7. Hold <strong>Control</strong> and <strong>Click on OpenCola</strong> (or <strong>Right-Click on OpenCola</strong>) and select <strong>Open</strong>:
+
 <img src="img/open-from-finder.png" width="737"/>
 
 8. On the resulting dialog, click <strong>Open<strong>:
+
 <img src="img/second-open.png" width="372" />
 
 6. In a few seconds, a browser window will open. Follow the instructions on the page for installing an SSL certificate. (Certificates will be placed in ```~/Library/Application\ Support/OpenCola/storage/cert```)
