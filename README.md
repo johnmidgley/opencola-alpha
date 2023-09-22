@@ -20,7 +20,7 @@ You're also welcome to share this alpha with friends, but we are limited on the 
 * Cleaned up setup and login UI
 * Embedded help into application
 * Added instruction on empty pages
-* Embeded Chrome Extension in app
+* Embeded Chrome Extension into application
 
 # New in version 1.3.2
 
