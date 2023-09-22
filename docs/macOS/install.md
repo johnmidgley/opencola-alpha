@@ -2,7 +2,7 @@
 
 # Installing OpenCola on MacOS
 
-1. <strong>Download</strong> the [Mac Release](https://github.com/johnmidgley/opencola-alpha/releases/download/v1.3.2/OpenCola-MacOS-1.3.2.dmg) (Universal)
+1. <strong>Download</strong> the [Mac Release](https://github.com/johnmidgley/opencola-alpha/releases/download/v1.3.3/OpenCola-MacOS-1.3.3.dmg) (Universal)
 2. <Strong>Open</strong> the disk image:
 <img src="img/open-dmg.png">
 3. Click and drag the <strong>OpenCola</strong> icon and drop in <strong>Applications</strong>
