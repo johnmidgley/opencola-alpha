@@ -66,5 +66,5 @@ OpenCola runs a small server on your computer. You use OpenCola through a your w
 
 # Setting Up
 
-Setup instruction are now inside the application iteself. Just start the application and follow the instructions.
+Setup instruction are now inside the application iteself. Just start the application and follow the instructions. Help on how to use OpenCola can also be found inside the application itself. 
 
