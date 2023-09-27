@@ -1,7 +1,7 @@
 <img src="img/pull-tab.svg" width="100" />
 
-# opencola-alpha 1.3.3
-_updated 9/21/2023_
+# opencola-alpha 1.3.4
+_updated 9/27/2023_
 
 
 Welcome to the [OpenCola](https://opencola.io) alpha. We look forward to hearing your feedback and getting help ironing out the wrinkles. While a lot of the foundation is complete, we will continually be working on adding new features and making it easier to install / use. Some key things that we will be working on:
@@ -14,19 +14,24 @@ Feel free to add issues you come across to [issues](https://github.com/johnmidgl
 
 You're also welcome to share this alpha with friends, but we are limited on the amount of support we can provide, so we will prioritize those on the alpha list.
 
+# New in version 1.3.4 (9/27/2023)
 
-# New in version 1.3.3
+* Added tag search, supporting query terms with '#' prefix, or clicking on tags in items
+* Added authority search, supporting query terms with '@' prefix, or clicking on authorities in items. The allows you to see any given peer's feed, or you can mix persona / peer feeds.
+* For more details, see the search section in the in app help (click the help icon at the top right of the app and select search in the top navigation)
+
+# New in version 1.3.3 (9/21/2023)
 
 * Cleaned up setup and login UI
 * Embedded help into application
-* Added instruction on empty pages
+* Added instructions on empty pages
 * Embeded Chrome Extension into application
 
-# New in version 1.3.2
+# New in version 1.3.2 (9/15/2023)
 
 Fixed issues with display of attachments
 
-# New in version 1.3.1
+# New in version 1.3.1 (9/06/2023)
 
 This release brings some important features and imrpovements as well as a number of minor bug fixes.
 
